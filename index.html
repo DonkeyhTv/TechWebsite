@@ -1,13 +1,78 @@
-<!DOCTYPE html>
-<html lang="">
+<!doctype html>
+<html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="OOZAMI" />
+    <meta name="publisher" content="OOZAMI" />
+    <meta name="copyright" content="OOZAMI" />
+    <meta name="theme-color" content="#4A90E2" />
+
+    <meta name="geo.region" content="BE-WHT" />
+    <meta name="geo.placename" content="Tournai" />
+    <meta name="geo.position" content="50.6053;3.3858" />
+    <meta name="ICBM" content="50.6053, 3.3858" />
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>OOZAMI - Solutions Digitales Sur Mesure | Design, Développement, Croissance</title>
+
+    <meta
+      name="description"
+      content="OOZAMI - Agence digitale à Tournai. Création de sites web, applications mobiles, design UX/UI et stratégies marketing digital pour faire rayonner votre activité."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OOZAMI" />
+    <meta property="og:locale" content="fr_BE" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif">
+        <h1>JavaScript est requis</h1>
+        <p>
+          Pour profiter pleinement de l'expérience OOZAMI, veuillez activer JavaScript dans votre
+          navigateur.
+        </p>
+        <p>
+          JavaScript is required to view this site. Please enable JavaScript in your browser
+          settings.
+        </p>
+      </div>
+    </noscript>
+
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+
+    <!-- Google Analytics (clé à ajouter ici) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'GA_MEASUREMENT_ID')
+    </script>
   </body>
 </html>

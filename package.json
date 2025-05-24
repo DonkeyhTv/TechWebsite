@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@unhead/vue": "^2.0.10",
+    "@vueuse/head": "^2.0.0",
     "lucide-vue-next": "^0.511.0",
     "particles.js": "^2.0.0",
     "pinia": "^3.0.2",

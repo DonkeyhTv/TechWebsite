@@ -36,7 +36,7 @@
             <p
               class="uppercase text-oozami-lightblue text-xs sm:text-base font-medium tracking-wider"
             >
-              Impact Numérique
+              {{ $t('hero.tagline') }}
             </p>
             <span class="w-1.5 h-1.5 bg-oozami-lightblue rounded-full"></span>
           </div>
@@ -45,25 +45,24 @@
             <span
               class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-oozami-black dark:text-white transition-all"
             >
-              Design.
+              {{ $t('hero.title.line1') }}
             </span>
             <span
               class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-2 text-oozami-black dark:text-white transition-all"
             >
-              Développement.
+              {{ $t('hero.title.line2') }}
             </span>
             <span
               class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-2 text-oozami-lightblue"
             >
-              Croissance.
+              {{ $t('hero.title.line3') }}
             </span>
           </h1>
 
           <p
             class="text-base sm:text-lg md:text-xl text-oozami-black dark:text-white transition-all leading-relaxed max-w-xl mx-auto lg:mx-0"
           >
-            Créons ensemble des solutions digitales et visuelles sur mesure pour faire rayonner
-            votre activité.
+            {{ $t('hero.description') }}
           </p>
 
           <div class="pt-0 sm:pt-6 lg:pt-8">
@@ -71,7 +70,7 @@
               @click="scrollToSection('contact')"
               class="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-oozami-lightblue text-oozami-lightblue font-semibold hover:bg-oozami-lightblue hover:text-white transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
             >
-              Nous contacter
+              {{ $t('hero.cta') }}
             </button>
           </div>
         </div>

@@ -23,5 +23,37 @@
     "demo": {
       "button": "Voir le dashboard complet"
     }
+  },
+  "hero": {
+    "tagline": "Impact Numérique",
+    "title": {
+      "line1": "Design.",
+      "line2": "Développement.",
+      "line3": "Croissance."
+    },
+    "description": "Créons ensemble des solutions digitales et visuelles sur mesure pour faire rayonner votre activité.",
+    "cta": "Nous contacter"
+  },
+  "seo": {
+    "home": {
+      "title": "Accueil - Agence Web & Solutions Digitales",
+      "description": "OOZAMI, votre partenaire digital à Tournai. Nous créons des sites web performants, des designs innovants et des stratégies digitales sur mesure pour faire grandir votre entreprise."
+    },
+    "services": {
+      "title": "Nos Services - Développement Web, Design & Marketing",
+      "description": "Découvrez nos services digitaux complets : création de sites web, applications mobiles, design UX/UI, référencement SEO, marketing digital et intégration Sitecore."
+    },
+    "about": {
+      "title": "À Propos - Notre Expertise Digitale",
+      "description": "OOZAMI allie créativité et technologie pour transformer vos idées en solutions digitales performantes. Découvrez notre approche et notre équipe passionnée."
+    },
+    "contact": {
+      "title": "Contact - Parlons de Votre Projet",
+      "description": "Contactez OOZAMI pour discuter de votre projet digital. Basés à Tournai, nous accompagnons les entreprises belges et internationales dans leur transformation numérique."
+    },
+    "dashboard": {
+      "title": "Dashboard Analytics - Démonstration Sitecore",
+      "description": "Explorez notre dashboard analytics avec des données en temps réel, personnalisation intelligente et insights basés sur Sitecore Experience Platform."
+    }
   }
 }

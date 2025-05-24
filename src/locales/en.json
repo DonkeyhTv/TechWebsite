@@ -5,5 +5,55 @@
     "services": "Services",
     "about": "About",
     "contact": "Contact"
+  },
+  "sitecore": {
+    "title": "Sitecore Analytics Demo",
+    "subtitle": "Real-time xDB data visualization and intelligent personalization",
+    "engagement": {
+      "title": "Most Viewed Pages"
+    },
+    "personalization": {
+      "title": "Personalization Profiles"
+    },
+    "realtime": {
+      "title": "Real-time Activity",
+      "activities": "Recent Activities",
+      "goals": "Conversion Goals"
+    },
+    "demo": {
+      "button": "View Full Dashboard"
+    }
+  },
+  "hero": {
+    "tagline": "Digital Impact",
+    "title": {
+      "line1": "Design.",
+      "line2": "Development.",
+      "line3": "Growth."
+    },
+    "description": "Let's create together custom digital and visual solutions to make your business shine.",
+    "cta": "Contact Us"
+  },
+  "seo": {
+    "home": {
+      "title": "Home - Web Agency & Digital Solutions",
+      "description": "OOZAMI, your digital partner in Tournai. We create high-performance websites, innovative designs and custom digital strategies to grow your business."
+    },
+    "services": {
+      "title": "Our Services - Web Development, Design & Marketing",
+      "description": "Discover our comprehensive digital services: website creation, mobile applications, UX/UI design, SEO, digital marketing and Sitecore integration."
+    },
+    "about": {
+      "title": "About - Our Digital Expertise",
+      "description": "OOZAMI combines creativity and technology to transform your ideas into high-performance digital solutions. Discover our approach and our passionate team."
+    },
+    "contact": {
+      "title": "Contact - Let's Talk About Your Project",
+      "description": "Contact OOZAMI to discuss your digital project. Based in Tournai, we support Belgian and international companies in their digital transformation."
+    },
+    "dashboard": {
+      "title": "Analytics Dashboard - Sitecore Demo",
+      "description": "Explore our analytics dashboard with real-time data, intelligent personalization and insights based on Sitecore Experience Platform."
+    }
   }
 }

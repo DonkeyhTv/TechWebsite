@@ -3,6 +3,7 @@
     id="app"
     class="min-h-screen bg-white dark:bg-oozami-darkblue transition-colors duration-300"
   >
+    <StructuredData />
     <PageLoader />
 
     <Transition
@@ -35,6 +36,7 @@ import { RouterView } from 'vue-router'
 import { useLoader } from '@/composables/useLoader'
 import AppHeader from './components/AppHeader.vue'
 import PageLoader from './components/PageLoader.vue'
+import StructuredData from './components/StructuredData.vue'
 
 const { isLoading, startLoading, stopLoading } = useLoader()
 
