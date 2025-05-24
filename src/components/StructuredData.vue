@@ -8,7 +8,7 @@ import { useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 const route = useRoute()
-const baseUrl = 'https://oozami.be'
+const baseUrl = 'https://oozami.com'
 
 const organizationSchema = computed(() => ({
   '@context': 'https://schema.org',
