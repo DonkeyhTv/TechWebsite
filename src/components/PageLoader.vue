@@ -5,7 +5,7 @@
     leave-to-class="opacity-0"
   >
     <div v-if="isLoading" class="fixed inset-0 z-[100]">
-      <div class="absolute inset-0 bg-blue-200"></div>
+      <div class="absolute inset-0 bg-oozami-lightblue"></div>
 
       <div class="absolute inset-0 overflow-hidden">
         <div

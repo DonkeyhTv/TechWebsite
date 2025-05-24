@@ -12,4 +12,5 @@
 <script setup lang="ts">
 import HeroSection from '@/components/HeroSection.vue'
 import TestSection from '@/components/TestSection.vue'
+import SitecoreAnalyticsSection from '@/components/sections/SitecoreAnalyticsSection.vue'
 </script>

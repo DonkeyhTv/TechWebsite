@@ -4,7 +4,7 @@
       v-for="item in navItems"
       :key="item.name"
       :href="item.href"
-      class="text-gray-700 hover:text-oozami-lightblue dark:text-white dark:hover:text-oozami-lightblue px-3 py-2 text-sm font-medium transition-colors duration-200"
+      class="text-oozami-black hover:text-oozami-lightblue dark:text-white dark:hover:text-oozami-lightblue px-3 py-2 text-sm font-medium transition-colors duration-200"
     >
       {{ $t(item.i18nKey) }}
     </a>

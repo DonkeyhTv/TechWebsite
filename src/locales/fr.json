@@ -5,5 +5,23 @@
     "services": "Services",
     "about": "À propos",
     "contact": "Contact"
+  },
+  "sitecore": {
+    "title": "Démonstration Sitecore Analytics",
+    "subtitle": "Visualisation en temps réel des données xDB et personnalisation intelligente",
+    "engagement": {
+      "title": "Pages les plus consultées"
+    },
+    "personalization": {
+      "title": "Profils de personnalisation"
+    },
+    "realtime": {
+      "title": "Activité en temps réel",
+      "activities": "Dernières activités",
+      "goals": "Objectifs de conversion"
+    },
+    "demo": {
+      "button": "Voir le dashboard complet"
+    }
   }
 }
