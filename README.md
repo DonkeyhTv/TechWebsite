@@ -219,7 +219,24 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
   - Icône SVG qui grandit
   - Bordure de l'icône qui change
 
-### 3. Dashboard Analytics
+### 3. Section About Us
+
+- **Grille 2 colonnes** : contenu à gauche, image à droite
+- **Image avec effet parallaxe 3D** au survol (comme HeroSection)
+- **4 items avec icônes Flaticon** dans une grille 2x2
+- **Animations au scroll** :
+  - Header : fade-in du bas (100ms)
+  - Colonne gauche : slide depuis la gauche (400ms)
+  - Colonne droite : slide depuis la droite (600ms)
+- **Effets hover sur les items** :
+  - Élévation avec translate Y
+  - Fond de l'icône qui devient plein bleu
+  - Ombre portée bleue sur l'icône
+  - Transitions fluides de 300ms
+- **Support complet i18n** avec structure Lorem Ipsum
+- **Responsive** : passe en 1 colonne sur mobile
+
+### 4. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore

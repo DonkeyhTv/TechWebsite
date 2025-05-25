@@ -88,5 +88,47 @@
         "description": "Sit amet consectetur adipisicing elit lorem ipsum dolor. Ullam omnis id atque dignissimos repellat quae."
       }
     }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Who We Are",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo tempore quidem neque laborum.",
+    "leftColumn": {
+      "title": "Why Choose Us"
+    },
+    "items": {
+      "item1": {
+        "title": "Lorem Ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste"
+      },
+      "item2": {
+        "title": "Dolor Sit Amet",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste"
+      },
+      "item3": {
+        "title": "Lorem Ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste"
+      },
+      "item4": {
+        "title": "Dolor Sit Amet",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projectsCompleted": "Projects Completed"
+    },
+    "features": {
+      "innovation": {
+        "title": "Innovation First"
+      },
+      "quality": {
+        "title": "Quality Assured"
+      },
+      "support": {
+        "title": "24/7 Support"
+      }
+    },
+    "ctaButton": "Learn More"
   }
 }
