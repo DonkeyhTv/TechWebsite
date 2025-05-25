@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build:local": "node scripts/set-env.js local && vite build",
+    "build:staging": "node scripts/set-env.js staging && vite build",
+    "build:production": "node scripts/set-env.js production && vite build",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
@@ -13,6 +15,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
     "@unhead/vue": "^2.0.10",
     "@vueuse/head": "^2.0.0",
     "lucide-vue-next": "^0.511.0",

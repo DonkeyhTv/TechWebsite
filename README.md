@@ -17,6 +17,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Hero section interactive** avec effet parallaxe 3D sur l'image
 - **Système de particules animées** avec particles.js
 - **Loader de page personnalisé** avec progression animée
+- **Section Services animée** avec effet de vague au scroll
 
 ### Développement
 
@@ -25,6 +26,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Internationalisation (i18n)** FR/EN complète
 - **Composants réutilisables** et modulaires
 - **Dashboard analytics** avec visualisations de données
+- **Intersection Observer** pour animations au scroll
 
 ### SEO & Performance
 
@@ -47,6 +49,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Tailwind CSS 3.4** - Framework CSS utility-first
 - **PostCSS** - Transformations CSS
 - **Police Jost** - Typography personnalisée
+- **Flaticon** - Icônes professionnelles
 
 ### Fonctionnalités
 
@@ -54,6 +57,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Particles.js** - Animations de particules
 - **Lucide Vue Next** - Icônes modernes
 - **@vueuse/head** - Gestion des meta tags
+- **@flaticon/flaticon-uicons** - Bibliothèque d'icônes
 
 ### Développement
 
@@ -81,6 +85,7 @@ oozami/
 │   │   ├── HeroSection.vue
 │   │   ├── PageLoader.vue
 │   │   ├── StructuredData.vue
+│   │   ├── ServicesSection.vue      # Nouvelle section
 │   │   ├── header/
 │   │   │   ├── HeaderActions.vue
 │   │   │   ├── HeaderLanguagesSelector.vue
@@ -94,6 +99,8 @@ oozami/
 │   │   ├── useSEO.ts
 │   │   ├── useSitecoreAnalytics.ts
 │   │   └── useI18n.ts
+│   ├── data/
+│   │   └── services.json            # Données des services
 │   ├── layouts/
 │   │   └── DashboardLayout.vue
 │   ├── locales/
@@ -131,11 +138,15 @@ cd oozami
 # Installer les dépendances
 npm install
 
+# Installer les icônes Flaticon
+npm i @flaticon/flaticon-uicons
+
 # Lancer le serveur de développement
 npm run dev
 
-# Build pour la production
-npm run build
+npm run build:production
+npm run build:local
+npm run build:staging  #Build si pas à la racine du FTP
 
 # Preview du build
 npm run preview
@@ -163,6 +174,20 @@ Les fichiers de traduction sont dans `/src/locales/`:
 - `fr.json` - Français
 - `en.json` - Anglais
 
+Exemple pour la section Services :
+
+```json
+{
+  "services": {
+    "badge": "Digital Marketing",
+    "title": "Services We Offer",
+    "subtitle": "Lorem ipsum dolor sit amet...",
+    "techButton": "Techs We Use",
+    "readMore": "Read More"
+  }
+}
+```
+
 ### SEO
 
 Meta tags à configurer dans `/src/composables/useSEO.ts`
@@ -175,21 +200,40 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
 - Particules animées en arrière-plan
 - Responsive avec versions mobile/desktop
 
-### 2. Dashboard Analytics
+### 2. Section Services
+
+- **Grille responsive** de 6 cartes de services (3x2 sur desktop, 2x3 sur tablette, 1x6 sur mobile)
+- **Effet hover unique** : fond bleu qui glisse de gauche à droite
+- **Animation au scroll** : apparition progressive des cartes avec effet de vague
+- **Icônes Flaticon** personnalisables
+- **Support i18n** pour tous les textes
+- **Dark mode** compatible
+
+#### Animations de la section Services :
+
+- **Header et bouton** : apparition avec délai progressif
+- **Cartes** : apparition en vague (gauche vers droite) par rangée
+- **Hover effects** :
+  - Fond bleu glissant avec scale X
+  - Textes devenant blancs
+  - Icône SVG qui grandit
+  - Bordure de l'icône qui change
+
+### 3. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore
 - Métriques et KPIs interactifs
 - Export de rapports
 
-### 3. Système de Navigation
+### 4. Système de Navigation
 
 - Header sticky avec changement de style au scroll
 - Menu mobile hamburger animé
 - Sélecteur de langue intégré
 - Mode sombre/clair
 
-### 4. Loader de Page
+### 5. Loader de Page
 
 - Animation de chargement personnalisée
 - Progression de 0 à 100%
@@ -202,6 +246,8 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
 {
   "dev": "vite",
   "build": "vite build",
+  "build:staging": "node scripts/set-env.js staging && vite build",
+  "build:production": "node scripts/set-env.js production && vite build",
   "preview": "vite preview",
   "type-check": "vue-tsc --build --force",
   "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
@@ -226,6 +272,14 @@ Le site est prêt pour le déploiement sur :
 - Vercel
 - GitHub Pages
 - Tout serveur statique
+
+### Configuration par environnement
+
+Le projet supporte plusieurs environnements via `set-env.js` :
+
+- **local** : basePath = '/'
+- **staging** : basePath = '/techWebsite/'
+- **production** : basePath = '/'
 
 ## 📝 Licence
 

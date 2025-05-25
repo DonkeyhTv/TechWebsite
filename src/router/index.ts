@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import { useLoader } from '@/composables/useLoader'
+import config from '../config/environments'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -47,7 +48,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(config.basePath),
   routes,
 })
 

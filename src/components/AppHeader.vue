@@ -6,7 +6,7 @@
     <div
       :class="[
         'mx-auto px-4 sm:px-6 transition-all duration-300',
-        isDashboard ? 'max-w-full lg:px-4' : 'max-w-7xl lg:px-8',
+        isDashboard ? 'max-w-full lg:px-4' : 'max-w-7xl lg:px-0',
       ]"
     >
       <div class="flex justify-between items-center h-16">

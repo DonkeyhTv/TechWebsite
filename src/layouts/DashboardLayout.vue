@@ -130,7 +130,7 @@ const updateDateTime = () => {
   })
 }
 
-let dateInterval: NodeJS.Timeout
+let dateInterval: ReturnType<typeof setInterval>
 
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme')

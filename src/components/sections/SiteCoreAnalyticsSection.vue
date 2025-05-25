@@ -239,7 +239,7 @@ const recentActivities = ref<Activity[]>([])
 
 const maxViews = computed(() => Math.max(...topPages.value.map((p) => p.views)))
 
-let activityInterval: NodeJS.Timeout
+let activityInterval: ReturnType<typeof setInterval>
 
 const generateActivity = (): Activity => {
   const actions = [

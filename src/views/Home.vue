@@ -4,10 +4,7 @@
       <HeroSection />
     </main>
     <section class="flex-1">
-      <TestSection />
-    </section>
-    <section class="flex-1">
-      <SitecoreAnalyticsSection />
+      <ServicesSection />
     </section>
   </div>
 </template>
@@ -15,9 +12,8 @@
 <script setup lang="ts">
 import { useSEO } from '@/composables/useSEO'
 import { useI18n } from 'vue-i18n'
-import HeroSection from '@/components/HeroSection.vue'
-import TestSection from '@/components/TestSection.vue'
-import SitecoreAnalyticsSection from '@/components/sections/SitecoreAnalyticsSection.vue'
+import HeroSection from '@/components/sections/HeroSection.vue'
+import ServicesSection from '@/components/sections/ServicesSection.vue'
 
 const { t } = useI18n()
 

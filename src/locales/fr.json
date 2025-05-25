@@ -55,5 +55,38 @@
       "title": "Dashboard Analytics - Démonstration Sitecore",
       "description": "Explorez notre dashboard analytics avec des données en temps réel, personnalisation intelligente et insights basés sur Sitecore Experience Platform."
     }
+  },
+  "services": {
+    "badge": "Marketing Digital",
+    "title": "Services Que Nous Offrons",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit Omnis\nid atque dignissimos repellat quae ullam.",
+    "techButton": "Technologies Utilisées",
+    "readMore": "En Savoir Plus",
+    "items": {
+      "webDevelopment": {
+        "title": "Développement Web",
+        "description": "fr Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id atque dignissimos repellat quae ullam."
+      },
+      "mobileDevelopment": {
+        "title": "Développement Mobile",
+        "description": "fr Consectetur adipisicing elit lorem ipsum dolor sit amet. Dignissimos repellat quae ullam omnis id atque."
+      },
+      "uiuxDesign": {
+        "title": "Design UI/UX",
+        "description": "Dolor sit amet consectetur adipisicing elit. Repellat quae ullam omnis id atque dignissimos lorem ipsum."
+      },
+      "cloudSolutions": {
+        "title": "Solutions Cloud",
+        "description": "Adipisicing elit lorem ipsum dolor sit amet consectetur. Quae ullam omnis id atque dignissimos repellat."
+      },
+      "digitalMarketing": {
+        "title": "Marketing Digital",
+        "description": "Ipsum dolor sit amet consectetur adipisicing elit lorem. Id atque dignissimos repellat quae ullam omnis."
+      },
+      "seoOptimization": {
+        "title": "Optimisation SEO",
+        "description": "Sit amet consectetur adipisicing elit lorem ipsum dolor. Ullam omnis id atque dignissimos repellat quae."
+      }
+    }
   }
 }

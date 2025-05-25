@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Quick Stats -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
       <div
         v-for="stat in quickStats"
@@ -37,9 +36,7 @@
     <!-- Analytics Section -->
     <SitecoreAnalyticsSection />
 
-    <!-- Additional Dashboard Features -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
-      <!-- Recent Alerts -->
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Alertes récentes</h3>
         <div class="space-y-3">
@@ -82,7 +79,6 @@
         </div>
       </div>
 
-      <!-- Quick Actions -->
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Actions rapides</h3>
         <div class="grid grid-cols-2 gap-3">
