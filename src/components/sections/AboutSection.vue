@@ -1,48 +1,59 @@
 <template>
-  <section class="about-section py-20 bg-white dark:bg-oozami-darkblue transition-all">
+  <section
+    class="about-section py-10 md:py-16 lg:py-20 bg-gray-100 dark:bg-oozami-lightblue/5 transition-all"
+  >
     <div class="container mx-auto px-4 max-w-7xl lg:px-0">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div ref="leftColumnRef" class="fade-in-left opacity-0">
-          <div ref="headerRef" class="mb-8 fade-in-up opacity-0">
-            <div class="flex items-center gap-2 mb-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+        <div ref="leftColumnRef" class="fade-in-left opacity-0 order-2 lg:order-1">
+          <div ref="headerRef" class="mb-6 md:mb-8 fade-in-up opacity-0 text-center lg:text-left">
+            <div class="flex items-center gap-2 mb-3 md:mb-4 justify-center lg:justify-start">
               <div class="w-1.5 h-1.5 bg-oozami-lightblue rounded-full"></div>
               <span
-                class="uppercase text-oozami-lightblue text-xs sm:text-base font-medium tracking-wider"
+                class="uppercase text-oozami-lightblue text-xs sm:text-sm md:text-base font-medium tracking-wider"
               >
                 {{ $t('about.badge') }}
               </span>
               <div class="w-1.5 h-1.5 bg-oozami-lightblue rounded-full"></div>
             </div>
 
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 transition-all duration-300">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-oozami-black dark:text-white mb-3 md:mb-4 transition-all duration-300"
+            >
               {{ $t('about.title') }}
             </h2>
 
-            <p class="text-gray-300 transition-all duration-300 max-w-xl text-lg">
+            <p
+              class="text-oozami-black dark:text-white transition-all duration-300 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg"
+            >
               {{ $t('about.subtitle') }}
             </p>
           </div>
 
           <div class="relative">
             <div class="relative z-10">
-              <div class="grid grid-cols-2 gap-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div
                   v-for="(item, index) in aboutItems"
                   :key="index"
-                  class="flex items-start space-x-4 group hover:-translate-y-1 transition-all duration-300"
+                  class="flex items-start space-x-3 md:space-x-4 group hover:-translate-y-1 transition-all duration-300 p-2"
                 >
                   <div class="flex-shrink-0">
                     <div
-                      class="w-12 h-12 bg-oozami-lightblue/20 group-hover:bg-oozami-lightblue rounded-lg flex items-center justify-center transition-all duration-300 group-hover:shadow-lg group-hover:shadow-oozami-lightblue/50"
+                      class="w-10 h-10 md:w-12 md:h-12 bg-oozami-lightblue/20 group-hover:bg-oozami-lightblue group:text-oozami-lightblue rounded-lg flex items-center justify-center transition-all duration-300 group-hover:shadow-lg group-hover:shadow-oozami-lightblue/50"
                     >
-                      <i :class="item.icon" class="text-2xl text-white leading-none"></i>
+                      <i
+                        :class="item.icon"
+                        class="text-xl md:text-2xl leading-none flex items-center text-oozami-lightblue group-hover:text-white transition-all duration-300"
+                      ></i>
                     </div>
                   </div>
                   <div class="flex-1">
-                    <h4 class="text-lg font-semibold text-white mb-1">
+                    <h4
+                      class="text-base md:text-xl font-semibold text-oozami-black dark:text-white mb-1"
+                    >
                       {{ $t(`about.items.${item.key}.title`) }}
                     </h4>
-                    <p class="text-gray-300 text-sm">
+                    <p class="text-oozami-black dark:text-white text-xs md:text-base opacity-80">
                       {{ $t(`about.items.${item.key}.description`) }}
                     </p>
                   </div>
@@ -50,16 +61,38 @@
               </div>
             </div>
           </div>
+
+          <div class="mt-6 md:mt-8 text-center lg:text-left">
+            <button
+              class="group inline-flex items-center px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-oozami-lightblue hover:bg-transparent border-2 border-oozami-lightblue text-white hover:text-oozami-lightblue font-semibold transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
+            >
+              {{ $t('about.ctaButton') }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4 ml-2 transition-all duration-300 group-hover:w-5 group-hover:h-5 md:group-hover:w-6 md:group-hover:h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div ref="rightColumnRef" class="fade-in-right opacity-0">
+        <div ref="rightColumnRef" class="fade-in-right opacity-0 order-1 lg:order-2">
           <div
-            class="relative perspective-1000"
+            class="relative perspective-1000 max-w-md mx-auto lg:max-w-none"
             @mousemove="handleMouseMove"
             @mouseleave="handleMouseLeave"
           >
             <div
-              class="relative rounded-2xl overflow-hidden transform-gpu transition-transform duration-300 ease-out"
+              class="relative rounded-xl md:rounded-2xl overflow-hidden transform-gpu transition-transform duration-300 ease-out"
               :style="imageStyle"
             >
               <img :src="aboutImage" alt="About us" class="w-full h-auto object-cover scale-100" />
@@ -143,7 +176,7 @@ onMounted(() => {
     },
     {
       threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px',
+      rootMargin: '0px 0px -100px 0px',
     },
   )
 
@@ -184,5 +217,12 @@ onMounted(() => {
 .fade-in-right.animate-in {
   opacity: 1 !important;
   transform: translate(0);
+}
+
+@media (max-width: 1023px) {
+  .fade-in-left,
+  .fade-in-right {
+    transform: translateY(40px);
+  }
 }
 </style>
