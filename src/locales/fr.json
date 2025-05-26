@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Accueil",
-    "products": "Produits",
     "services": "Services",
+    "portfolio": "Portfolio",
     "about": "À propos",
     "contact": "Contact"
   },

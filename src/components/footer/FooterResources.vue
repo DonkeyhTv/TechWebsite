@@ -1,6 +1,8 @@
 <template>
   <div class="footer-column">
-    <h3 class="text-white font-bold text-lg mb-6">{{ $t('footer.resources.title') }}</h3>
+    <h3 class="text-white text-center md:text-start font-bold text-lg mb-6">
+      {{ $t('footer.resources.title') }}
+    </h3>
 
     <ul class="space-y-3">
       <li v-for="resource in resources" :key="resource.name">

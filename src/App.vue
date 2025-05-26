@@ -29,6 +29,7 @@
         <AppFooter />
       </div>
     </Transition>
+    <ScrollToTop />
   </div>
 </template>
 
@@ -40,6 +41,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import PageLoader from './components/PageLoader.vue'
 import StructuredData from './components/StructuredData.vue'
+import ScrollToTop from '@/components/ScrollToTop.vue'
 
 const { isLoading, startLoading, stopLoading } = useLoader()
 

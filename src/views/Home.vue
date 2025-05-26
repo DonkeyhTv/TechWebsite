@@ -3,16 +3,16 @@
     <main class="flex-1">
       <HeroSection />
     </main>
-    <section class="flex-1">
+    <section id="services" class="flex-1">
       <ServicesSection />
     </section>
-    <section class="flex-1">
+    <section id="about" class="flex-1">
       <AboutSection />
     </section>
     <section class="flex-1">
       <WhyChooseUsSection />
     </section>
-    <section class="flex-1">
+    <section id="portfolio" class="flex-1">
       <PortfolioSection />
     </section>
     <section class="flex-1">
@@ -21,7 +21,7 @@
     <section class="flex-1">
       <TestimonialsSection />
     </section>
-    <section class="flex-1">
+    <section id="contact" class="flex-1">
       <ContactSection />
     </section>
   </div>
