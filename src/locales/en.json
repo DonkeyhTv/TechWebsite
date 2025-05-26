@@ -175,5 +175,31 @@
     "title": "What Our Clients Say",
     "basedOn": "Based on",
     "reviews": "reviews"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get In Touch",
+    "subtitle": "We're here to answer all your questions and support you in your digital project",
+    "getInTouch": "Let's Connect",
+    "description": "Feel free to contact us to discuss your project. Our team will get back to you as soon as possible.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "followUs": "Follow Us",
+    "form": {
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+33 6 XX XX XX XX",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or ask us your questions...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully! We will get back to you as soon as possible."
+    }
   }
 }

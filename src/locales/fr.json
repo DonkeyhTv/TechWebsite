@@ -175,5 +175,31 @@
     "title": "Ce Que Disent Nos Clients",
     "basedOn": "Basé sur",
     "reviews": "avis"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes là pour répondre à toutes vos questions et vous accompagner dans votre projet digital",
+    "getInTouch": "Restons en Contact",
+    "description": "N'hésitez pas à nous contacter pour discuter de votre projet. Notre équipe vous répondra dans les plus brefs délais.",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "followUs": "Suivez-nous",
+    "form": {
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 XX XX XX XX",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou posez-nous vos questions...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais."
+    }
   }
 }

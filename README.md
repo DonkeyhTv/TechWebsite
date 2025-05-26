@@ -21,6 +21,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Portfolio avec filtrage dynamique** utilisant Isotope.js
 - **Carousel de logos clients** avec rotation automatique
 - **Testimonials avec fond parallaxe** et carousel d'avis
+- **Formulaire de contact** avec animations et validations
 
 ### Développement
 
@@ -228,6 +229,19 @@ Exemple pour la section Portfolio :
 }
 ```
 
+Exemple pour la section Testimonials :
+
+```json
+{
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ce Que Disent Nos Clients",
+    "basedOn": "Basé sur",
+    "reviews": "avis"
+  }
+}
+```
+
 Exemple pour la section Clients :
 
 ```json
@@ -414,7 +428,40 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
   - Navigation tactile optimisée
 - **Données en dur** : Lorem ipsum temporaire en attendant l'intégration API Google Places
 
-### 8. Dashboard Analytics
+### 8. Section Contact
+
+- **Formulaire centré** avec layout simple et épuré
+- **En-tête minimaliste** :
+  - Badge "Contact" avec style cohérent
+  - Titre et description centrés
+  - Support dark mode complet
+- **Champs du formulaire** :
+  - 5 champs : prénom, nom, email, téléphone, message
+  - Email et téléphone sur la même ligne (responsive)
+  - Fonds transparents avec bordures grises
+  - Bordure bleue et ring au focus
+- **Interactions dynamiques** :
+  - Labels qui changent de couleur au focus du champ
+  - Variable activeField pour tracker le champ sélectionné
+  - Transitions fluides de 300ms sur tous les éléments
+- **Animations au scroll** :
+  - Header : fade-in depuis le haut (100ms)
+  - Formulaire : fade-in depuis le bas (300ms)
+  - Champs : apparition en cascade (400ms + 100ms par champ)
+- **Bouton d'envoi** :
+  - Centré avec coins arrondis personnalisés
+  - État de chargement avec spinner animé
+  - Désactivé pendant l'envoi
+- **Message de succès** :
+  - Apparition avec transition fade
+  - Auto-disparition après 5 secondes
+  - Reset automatique du formulaire
+- **Styles optimisés** :
+  - Override des styles navigateur par défaut
+  - Placeholders visibles sur fond transparent
+  - Support complet du dark mode
+
+### 9. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore
