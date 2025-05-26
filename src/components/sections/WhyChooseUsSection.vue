@@ -1,5 +1,7 @@
 <template>
-  <section class="why-choose-us-section py-10 md:py-16 lg:py-20 bg-oozami-darkblue">
+  <section
+    class="why-choose-us-section py-10 md:py-16 lg:py-20 bg-white dark:bg-oozami-darkblue transition-all"
+  >
     <div class="container mx-auto px-4 max-w-7xl lg:px-0">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
         <div ref="leftColumnRef" class="fade-in-left opacity-0 order-1 lg:order-1">
@@ -38,7 +40,9 @@
             {{ $t('whyChooseUs.title') }}
           </h2>
           <div class="text-center lg:text-left mb-8">
-            <p class="text-gray-300 text-base md:text-lg mb-8 leading-relaxed">
+            <p
+              class="text-oozami-black/70 dark:text-gray-300 text-base md:text-lg mb-8 leading-relaxed transition-all duration-300"
+            >
               {{ $t('whyChooseUs.description') }}
             </p>
           </div>
@@ -55,10 +59,14 @@
                 </div>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl md:text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-xl md:text-2xl font-bold text-oozami-black dark:text-white mb-2 transition-all duration-300"
+                >
                   {{ $t(`whyChooseUs.items.${item.key}.title`) }}
                 </h3>
-                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                <p
+                  class="text-oozami-black/70 dark:text-gray-300 text-sm md:text-base leading-relaxed"
+                >
                   {{ $t(`whyChooseUs.items.${item.key}.description`) }}
                 </p>
               </div>

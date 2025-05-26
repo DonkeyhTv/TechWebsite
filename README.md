@@ -188,6 +188,25 @@ Exemple pour la section Services :
 }
 ```
 
+Exemple pour la section Why Choose Us :
+
+```json
+{
+  "whyChooseUs": {
+    "badge": "Why Choose Us",
+    "title": "Lorem Dolore Sit Amet",
+    "description": "Lorem ipsum dolor sit amet...",
+    "items": {
+      "item1": {
+        "title": "Lorem Dolore",
+        "description": "Lorem ipsum dolor sit amet..."
+      }
+    },
+    "ctaButton": "Get In Touch"
+  }
+}
+```
+
 ### SEO
 
 Meta tags à configurer dans `/src/composables/useSEO.ts`
@@ -236,7 +255,26 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
 - **Support complet i18n** avec structure Lorem Ipsum
 - **Responsive** : passe en 1 colonne sur mobile
 
-### 4. Dashboard Analytics
+### 4. Section Why Choose Us
+
+- **Grille 2 colonnes** : image avec effet parallaxe à gauche, contenu à droite
+- **Fond sombre** : utilise `bg-oozami-darkblue` pour créer une section contrastée
+- **Effet parallaxe 3D** sur l'image (identique aux autres sections)
+- **3 points numérotés** avec design moderne :
+  - Numéros en grand (01., 02., 03.) en couleur `oozami-lightblue`
+  - Titre et description pour chaque point
+  - Espacement vertical généreux
+- **Animations au scroll** :
+  - Image : slide depuis la gauche (200ms)
+  - Contenu : slide depuis la droite (400ms)
+- **Badge et titre** avec le même style que les autres sections
+- **Bouton CTA** "Get In Touch" avec style cohérent
+- **Responsive** :
+  - Mobile : image en haut, contenu en bas
+  - Desktop : image à gauche, contenu à droite
+  - Adaptation des tailles de texte et espacements
+
+### 5. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore
