@@ -201,5 +201,32 @@
       "sending": "Envoi en cours...",
       "success": "Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais."
     }
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque? Voluptatem magnam quisquam rem.",
+    "newsletter": {
+      "title": "S'abonner à notre Newsletter",
+      "placeholder": "Adresse Email",
+      "button": "S'abonner",
+      "privacy": "* Nous ne partagerons pas vos informations personnelles"
+    },
+    "links": {
+      "title": "Liens Utiles"
+    },
+    "resources": {
+      "title": "Ressources",
+      "support": "Support",
+      "dashboard": "Dashboard",
+      "drivers": "Drivers",
+      "projects": "Projets"
+    },
+    "contact": {
+      "title": "Informations de Contact",
+      "address": "Tournai, Belgique"
+    },
+    "createdBy": "Créé par:",
+    "companyName": "Steve Amissi",
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité"
   }
 }

@@ -25,6 +25,8 @@
             <component :is="Component" />
           </Transition>
         </RouterView>
+
+        <AppFooter />
       </div>
     </Transition>
   </div>
@@ -35,6 +37,7 @@ import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
 import { useLoader } from '@/composables/useLoader'
 import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 import PageLoader from './components/PageLoader.vue'
 import StructuredData from './components/StructuredData.vue'
 
@@ -45,7 +48,6 @@ onMounted(() => {
 
   const savedTheme = localStorage.getItem('theme')
 
-  // Mode sombre par défaut
   if (!savedTheme || savedTheme === 'dark') {
     document.documentElement.classList.add('dark')
   } else {

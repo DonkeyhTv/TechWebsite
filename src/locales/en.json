@@ -201,5 +201,32 @@
       "sending": "Sending...",
       "success": "Your message has been sent successfully! We will get back to you as soon as possible."
     }
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque? Voluptatem magnam quisquam rem.",
+    "newsletter": {
+      "title": "Subscribe to Our News Letter",
+      "placeholder": "Email Address",
+      "button": "Subscribe",
+      "privacy": "* We Will Not Share Your Personal Info"
+    },
+    "links": {
+      "title": "Useful Links"
+    },
+    "resources": {
+      "title": "Resources",
+      "support": "Support",
+      "dashboard": "Dashboard",
+      "drivers": "Drivers",
+      "projects": "Projects"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "address": "5 xyz st., abc, alexandria, egypt."
+    },
+    "createdBy": "Created by:",
+    "companyName": "Steve Amissi",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
   }
 }
