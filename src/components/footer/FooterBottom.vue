@@ -1,7 +1,7 @@
 <template>
   <div class="border-t border-oozami-lightblue/20 pt-4 mt-4">
     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-white text-xs text-sm">
+      <p class="text-white text-xs md:text-sm">
         © {{ currentYear }} {{ $t('footer.createdBy') }}
         <a
           href="https://steve-amissi.be"

@@ -192,7 +192,7 @@
       "lastName": "Nom",
       "lastNamePlaceholder": "Votre nom",
       "email": "Email",
-      "emailPlaceholder": "votre@email.com",
+      "emailPlaceholder": "votre{'@'}email.com",
       "phone": "Téléphone",
       "phonePlaceholder": "+33 6 XX XX XX XX",
       "message": "Message",
@@ -228,5 +228,8 @@
     "companyName": "Steve Amissi",
     "terms": "Conditions d'Utilisation",
     "privacy": "Politique de Confidentialité"
+  },
+  "scrollToTop": {
+    "ariaLabel": "Retour en haut de la page"
   }
 }

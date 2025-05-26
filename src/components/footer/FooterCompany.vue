@@ -4,7 +4,7 @@
       <h3 class="text-3xl font-bold text-oozami-lightblue">Logo Here</h3>
     </div>
 
-    <p class="text-gray-300 text-sm leading-relaxed mb-6">
+    <p class="text-gray-300 text-base leading-relaxed mb-6">
       {{ $t('footer.description') }}
     </p>
   </div>

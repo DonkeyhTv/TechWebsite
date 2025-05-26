@@ -392,7 +392,6 @@ onMounted(() => {
   animation: spin 1s linear infinite;
 }
 
-/* Override des styles par défaut du navigateur */
 input:focus,
 textarea:focus {
   outline: none !important;
@@ -400,7 +399,6 @@ textarea:focus {
   -webkit-appearance: none;
 }
 
-/* Ensure les bordures sont visibles */
 input,
 textarea {
   -webkit-appearance: none;
@@ -408,7 +406,6 @@ textarea {
   appearance: none;
 }
 
-/* Placeholders plus visibles */
 input::placeholder,
 textarea::placeholder {
   color: #9ca3af;
