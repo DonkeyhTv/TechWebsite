@@ -20,6 +20,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Section Services animée** avec effet de vague au scroll
 - **Portfolio avec filtrage dynamique** utilisant Isotope.js
 - **Carousel de logos clients** avec rotation automatique
+- **Testimonials avec fond parallaxe** et carousel d'avis
 
 ### Développement
 
@@ -84,7 +85,9 @@ oozami/
 │   │   │   ├── hero-trans.png
 │   │   │   ├── bg-hero.jpg
 │   │   │   ├── portfolio-placeholder.jpg
-│   │   │   └── client-logo-placeholder.png (1-6)
+│   │   │   ├── client-logo-placeholder.png (1-6)
+│   │   │   ├── testimonials-bg.jpg
+│   │   │   └── google-logo.png
 │   │   └── main.css
 │   ├── components/
 │   │   ├── AppHeader.vue
@@ -94,6 +97,7 @@ oozami/
 │   │   ├── ServicesSection.vue
 │   │   ├── PortfolioSection.vue
 │   │   ├── ClientsSection.vue        # Section carousel logos
+│   │   ├── TestimonialsSection.vue   # Section témoignages
 │   │   ├── header/
 │   │   │   ├── HeaderActions.vue
 │   │   │   ├── HeaderLanguagesSelector.vue
@@ -381,7 +385,36 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
   - Scale + translateY pour effet moderne
 - **Titre simple** : "Ils nous ont fait confiance" (28px, centré)
 
-### 7. Dashboard Analytics
+### 7. Section Testimonials
+
+- **Fond avec image fixe** : effet parallaxe avec overlay sombre (85% opacité)
+- **En-tête avec notation Google** :
+  - Note moyenne affichée (4.8/5 étoiles)
+  - Nombre total d'avis (127)
+  - Logo Google pour l'authenticité
+  - Badge "Témoignages" avec style cohérent
+- **Carousel de témoignages** :
+  - 5 témoignages avec rotation automatique
+  - Auto-play toutes les 5 secondes
+  - Navigation manuelle avec flèches
+  - Indicateurs de position (dots)
+- **Design des cartes témoignages** :
+  - Effet glassmorphism (fond blanc 10% + backdrop blur)
+  - Avatar avec initiale du client
+  - Système de notation par étoiles (1-5)
+  - Citation mise en valeur avec guillemets
+  - Informations client : nom, entreprise, date
+- **Animations fluides** :
+  - Slide horizontal entre témoignages
+  - Fade-in progressif au scroll
+  - Transitions douces de 0.5s
+- **Responsive design** :
+  - Avatar caché sur mobile
+  - Adaptation des tailles de texte
+  - Navigation tactile optimisée
+- **Données en dur** : Lorem ipsum temporaire en attendant l'intégration API Google Places
+
+### 8. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore

@@ -169,5 +169,11 @@
   },
   "clients": {
     "title": "They Trusted Us"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "basedOn": "Based on",
+    "reviews": "reviews"
   }
 }
