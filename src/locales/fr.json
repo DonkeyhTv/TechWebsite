@@ -150,5 +150,21 @@
       }
     },
     "ctaButton": "Nous contacter"
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "title": "Nos Réalisations",
+    "seeMore": "Voir Plus",
+    "filters": {
+      "all": "Tout",
+      "web-development": "Développement Web",
+      "web-design": "Design Web",
+      "graphic": "Graphisme"
+    },
+    "categories": {
+      "web-development": "Développement Web",
+      "web-design": "Design Web",
+      "graphic": "Design Graphique"
+    }
   }
 }

@@ -12,6 +12,9 @@
     <section class="flex-1">
       <WhyChooseUsSection />
     </section>
+    <section class="flex-1">
+      <PortfolioSection />
+    </section>
   </div>
 </template>
 
@@ -22,6 +25,7 @@ import HeroSection from '@/components/sections/HeroSection.vue'
 import ServicesSection from '@/components/sections/ServicesSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
 import WhyChooseUsSection from '@/components/sections/WhyChooseUsSection.vue'
+import PortfolioSection from '@/components/sections/PortfolioSection.vue'
 
 const { t } = useI18n()
 

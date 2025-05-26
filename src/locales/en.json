@@ -150,5 +150,21 @@
       }
     },
     "ctaButton": "Get In Touch"
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "title": "What We Have Done",
+    "seeMore": "See More",
+    "filters": {
+      "all": "All",
+      "web-development": "Web Development",
+      "web-design": "Web Design",
+      "graphic": "Graphic"
+    },
+    "categories": {
+      "web-development": "Web Development",
+      "web-design": "Web Design",
+      "graphic": "Graphic Design"
+    }
   }
 }
