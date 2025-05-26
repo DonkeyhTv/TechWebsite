@@ -18,6 +18,8 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Système de particules animées** avec particles.js
 - **Loader de page personnalisé** avec progression animée
 - **Section Services animée** avec effet de vague au scroll
+- **Portfolio avec filtrage dynamique** utilisant Isotope.js
+- **Carousel de logos clients** avec rotation automatique
 
 ### Développement
 
@@ -27,6 +29,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Composants réutilisables** et modulaires
 - **Dashboard analytics** avec visualisations de données
 - **Intersection Observer** pour animations au scroll
+- **Isotope.js** pour le filtrage et l'arrangement du portfolio
 
 ### SEO & Performance
 
@@ -55,6 +58,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 
 - **Vue i18n** - Internationalisation
 - **Particles.js** - Animations de particules
+- **Isotope Layout** - Filtrage et arrangement de grille dynamique
 - **Lucide Vue Next** - Icônes modernes
 - **@vueuse/head** - Gestion des meta tags
 - **@flaticon/flaticon-uicons** - Bibliothèque d'icônes
@@ -78,14 +82,18 @@ oozami/
 │   ├── assets/
 │   │   ├── images/
 │   │   │   ├── hero-trans.png
-│   │   │   └── bg-hero.jpg
+│   │   │   ├── bg-hero.jpg
+│   │   │   ├── portfolio-placeholder.jpg
+│   │   │   └── client-logo-placeholder.png (1-6)
 │   │   └── main.css
 │   ├── components/
 │   │   ├── AppHeader.vue
 │   │   ├── HeroSection.vue
 │   │   ├── PageLoader.vue
 │   │   ├── StructuredData.vue
-│   │   ├── ServicesSection.vue      # Nouvelle section
+│   │   ├── ServicesSection.vue
+│   │   ├── PortfolioSection.vue
+│   │   ├── ClientsSection.vue        # Section carousel logos
 │   │   ├── header/
 │   │   │   ├── HeaderActions.vue
 │   │   │   ├── HeaderLanguagesSelector.vue
@@ -100,7 +108,8 @@ oozami/
 │   │   ├── useSitecoreAnalytics.ts
 │   │   └── useI18n.ts
 │   ├── data/
-│   │   └── services.json            # Données des services
+│   │   ├── services.json
+│   │   └── portfolio.json            # Données du portfolio
 │   ├── layouts/
 │   │   └── DashboardLayout.vue
 │   ├── locales/
@@ -140,6 +149,10 @@ npm install
 
 # Installer les icônes Flaticon
 npm i @flaticon/flaticon-uicons
+
+# Installer Isotope Layout pour le portfolio
+npm install isotope-layout
+npm install --save-dev @types/isotope-layout
 
 # Lancer le serveur de développement
 npm run dev
@@ -184,6 +197,39 @@ Exemple pour la section Services :
     "subtitle": "Lorem ipsum dolor sit amet...",
     "techButton": "Techs We Use",
     "readMore": "Read More"
+  }
+}
+```
+
+Exemple pour la section Portfolio :
+
+```json
+{
+  "portfolio": {
+    "badge": "Our Portfolio",
+    "title": "Latest Projects",
+    "seeMore": "See All Projects",
+    "filters": {
+      "all": "All",
+      "web-development": "Web Development",
+      "web-design": "Web Design",
+      "graphic": "Graphic Design"
+    },
+    "categories": {
+      "web-development": "Development",
+      "web-design": "Design",
+      "graphic": "Graphic"
+    }
+  }
+}
+```
+
+Exemple pour la section Clients :
+
+```json
+{
+  "clients": {
+    "title": "Ils nous ont fait confiance"
   }
 }
 ```
@@ -274,21 +320,82 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
   - Desktop : image à gauche, contenu à droite
   - Adaptation des tailles de texte et espacements
 
-### 5. Dashboard Analytics
+### 5. Section Portfolio
+
+- **Grille dynamique avec Isotope.js** : arrangement automatique des éléments
+- **Système de filtrage** par catégorie :
+  - All (tous les projets)
+  - Web Development
+  - Web Design
+  - Graphic Design
+- **Animations sophistiquées** :
+  - Header et filtres : apparition progressive au scroll
+  - Items : apparition initiale fluide
+  - Filtrage : transitions smooth avec scale et opacité
+  - Réarrangement sans rebond grâce à l'optimisation CSS
+- **Effets hover sur les vignettes** :
+  - Scale de 1.05 sur le contenu uniquement
+  - Barre d'information qui glisse du bas
+  - Badge de catégorie qui apparaît
+  - Icône de flèche animée
+- **Design moderne** :
+  - Vignettes avec coins arrondis
+  - Overlay sombre avec backdrop blur
+  - Badge de catégorie flottant
+  - Aspect ratio 16:12 pour les images
+- **Responsive** :
+  - Desktop : grille 3 colonnes
+  - Tablette : grille 2 colonnes
+  - Mobile : grille 1 colonne
+  - Espacement adaptatif entre les éléments
+- **Performance optimisée** :
+  - Lazy loading des images
+  - Animations CSS uniquement
+  - Pas de conflits entre Isotope et les transitions CSS
+
+### 6. Section Clients
+
+- **Carousel infini de logos** : rotation automatique des logos clients
+- **Grille responsive** : 6 colonnes sur desktop, 3 sur tablette, 2 sur mobile
+- **Effet carousel circulaire** :
+  - Rotation complète toutes les 3.5 secondes
+  - Le premier logo devient le deuxième, etc.
+  - Pas de glissement horizontal, transitions en place
+- **Effet de vague** :
+  - Chaque logo apparaît avec un délai de 80ms
+  - Animation progressive de gauche à droite
+  - Transitions fluides avec scale et fade
+- **Design des logos** :
+  - Cartes blanches de 125px de hauteur
+  - Logos zoomés à 125% pour meilleure visibilité
+  - Coins arrondis et ombres portées
+  - Fond bleu OOZAMI
+- **Effets interactifs** :
+  - Logos en grayscale par défaut
+  - Couleur au hover avec transition fluide
+  - Élévation de la carte au survol
+  - Overlay subtil au hover
+- **Animations optimisées** :
+  - Mode "out-in" pour éviter les chevauchements
+  - Transitions : 0.6s entrée, 0.4s sortie
+  - Scale + translateY pour effet moderne
+- **Titre simple** : "Ils nous ont fait confiance" (28px, centré)
+
+### 7. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore
 - Métriques et KPIs interactifs
 - Export de rapports
 
-### 4. Système de Navigation
+### 8. Système de Navigation
 
 - Header sticky avec changement de style au scroll
 - Menu mobile hamburger animé
 - Sélecteur de langue intégré
 - Mode sombre/clair
 
-### 5. Loader de Page
+### 9. Loader de Page
 
 - Animation de chargement personnalisée
 - Progression de 0 à 100%

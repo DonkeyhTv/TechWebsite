@@ -166,5 +166,8 @@
       "web-design": "Design Web",
       "graphic": "Design Graphique"
     }
+  },
+  "clients": {
+    "title": "Ils nous ont fait confiance"
   }
 }
