@@ -140,13 +140,13 @@ onMounted(() => {
           const element = entry.target as HTMLElement
 
           if (element === headerRef.value) {
-            setTimeout(() => element.classList.add('animate-in'), 100)
+            setTimeout(() => element.classList.add('animate-in'), 50)
           } else if (element === buttonRef.value) {
-            setTimeout(() => element.classList.add('animate-in'), 300)
+            setTimeout(() => element.classList.add('animate-in'), 150)
           } else {
             const cardIndex = cardsRef.value.indexOf(element)
             if (cardIndex !== -1) {
-              const delay = 500 + cardIndex * 150
+              const delay = 200 + cardIndex * 80
               setTimeout(() => element.classList.add('animate-in'), delay)
             }
           }
@@ -156,8 +156,8 @@ onMounted(() => {
       })
     },
     {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.05,
+      rootMargin: '0px 0px -20px 0px',
     },
   )
 
@@ -188,8 +188,8 @@ onMounted(() => {
 .fade-in-up {
   transform: translateY(60px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .fade-in-up.animate-in {

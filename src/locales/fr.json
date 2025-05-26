@@ -130,5 +130,25 @@
       }
     },
     "ctaButton": "Nous contacter"
+  },
+  "whyChooseUs": {
+    "badge": "Pourquoi Nous Choisir",
+    "title": "Pourquoi Choisir Society",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!",
+    "items": {
+      "item1": {
+        "title": "Lorem Dolore",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate!"
+      },
+      "item2": {
+        "title": "Lorem Dolore",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate!"
+      },
+      "item3": {
+        "title": "Lorem Dolore",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate!"
+      }
+    },
+    "ctaButton": "Nous contacter"
   }
 }
