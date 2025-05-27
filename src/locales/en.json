@@ -222,7 +222,7 @@
     },
     "contact": {
       "title": "Contact Information",
-      "address": "5 xyz st., abc, alexandria, egypt."
+      "address": "Tournai, Belgique"
     },
     "createdBy": "Created by:",
     "companyName": "Steve Amissi",
@@ -231,5 +231,36 @@
   },
   "scrollToTop": {
     "ariaLabel": "Scroll to top"
+  },
+  "pages": {
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "contactInfo": {
+    "office": {
+      "title": "Independent Digital Studio",
+      "address1": "Remote work from Tournai, Belgium",
+      "hours": "Hours",
+      "schedule1": "Mon - Fri: 9:00 AM - 6:00 PM",
+      "schedule2": "Sat - Sun: 9:00 AM - 2:00 PM"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone"
+    },
+    "response": {
+      "title": "Quick Response",
+      "description": "We are committed to responding to all inquiries within 24 business hours.",
+      "rate": "24h response rate"
+    },
+    "map": {
+      "placeholder": "Interactive Map - Google Maps"
+    }
   }
 }
