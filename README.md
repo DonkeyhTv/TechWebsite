@@ -22,6 +22,7 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Carousel de logos clients** avec rotation automatique
 - **Testimonials avec fond parallaxe** et carousel d'avis
 - **Formulaire de contact** avec animations et validations
+- **Footer modulaire** avec animations d'apparition
 
 ### Développement
 
@@ -88,23 +89,33 @@ oozami/
 │   │   │   ├── portfolio-placeholder.jpg
 │   │   │   ├── client-logo-placeholder.png (1-6)
 │   │   │   ├── testimonials-bg.jpg
-│   │   │   └── google-logo.png
+│   │   │   ├── google-logo.png
+│   │   │   └── footer-bg.jpg
 │   │   └── main.css
 │   ├── components/
 │   │   ├── AppHeader.vue
+│   │   ├── AppFooter.vue              # Footer principal
 │   │   ├── HeroSection.vue
 │   │   ├── PageLoader.vue
 │   │   ├── StructuredData.vue
 │   │   ├── ServicesSection.vue
 │   │   ├── PortfolioSection.vue
-│   │   ├── ClientsSection.vue        # Section carousel logos
-│   │   ├── TestimonialsSection.vue   # Section témoignages
+│   │   ├── ClientsSection.vue         # Section carousel logos
+│   │   ├── TestimonialsSection.vue    # Section témoignages
+│   │   ├── ContactSection.vue         # Section formulaire contact
+│   │   ├── ScrollToTop.vue            # Bouton retour en haut
 │   │   ├── header/
 │   │   │   ├── HeaderActions.vue
 │   │   │   ├── HeaderLanguagesSelector.vue
 │   │   │   ├── HeaderLogo.vue
 │   │   │   ├── HeaderMobile.vue
 │   │   │   └── HeaderNavigation.vue
+│   │   ├── footer/
+│   │   │   ├── FooterCompany.vue
+│   │   │   ├── FooterLinks.vue
+│   │   │   ├── FooterResources.vue
+│   │   │   ├── FooterContact.vue
+│   │   │   └── FooterBottom.vue
 │   │   └── sections/
 │   │       └── SitecoreAnalyticsSection.vue
 │   ├── composables/
@@ -224,6 +235,67 @@ Exemple pour la section Portfolio :
       "web-development": "Development",
       "web-design": "Design",
       "graphic": "Graphic"
+    }
+  }
+}
+```
+
+Exemple pour le Footer :
+
+```json
+{
+  "footer": {
+    "description": "Description de votre entreprise...",
+    "newsletter": {
+      "title": "S'abonner à notre Newsletter",
+      "placeholder": "Adresse Email",
+      "button": "S'abonner",
+      "privacy": "* Nous ne partagerons pas vos informations"
+    },
+    "links": {
+      "title": "Liens Utiles"
+    },
+    "resources": {
+      "title": "Ressources",
+      "support": "Support",
+      "dashboard": "Dashboard",
+      "drivers": "Drivers",
+      "projects": "Projets"
+    },
+    "contact": {
+      "title": "Informations de Contact",
+      "address": "Votre adresse ici"
+    },
+    "createdBy": "Créé par:",
+    "companyName": "OOZAMI",
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité"
+  }
+}
+```
+
+Exemple pour la section Contact :
+
+```json
+{
+  "contact": {
+    "badge": "Contact",
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes là pour répondre à toutes vos questions",
+    "form": {
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 XX XX XX XX",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !"
     }
   }
 }
@@ -461,7 +533,44 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
   - Placeholders visibles sur fond transparent
   - Support complet du dark mode
 
-### 9. Dashboard Analytics
+### 9. Footer
+
+- **Structure modulaire** avec 5 composants séparés :
+  - AppFooter (conteneur principal)
+  - FooterCompany (logo, description, newsletter)
+  - FooterLinks (liens utiles externes)
+  - FooterResources (navigation interne)
+  - FooterContact (informations de contact)
+  - FooterBottom (copyright et liens légaux)
+- **Design avec fond image** :
+  - Image de fond avec opacité 20%
+  - Motif de points flous en overlay
+  - Fond bleu foncé (oozami-darkblue)
+- **Grille responsive asymétrique** :
+  - Company et Contact : 4 colonnes (33%)
+  - Links et Resources : 2 colonnes (17%)
+  - 1 colonne sur mobile
+- **Newsletter intégré** :
+  - Formulaire d'inscription dans FooterCompany
+  - Validation email HTML5
+  - Message de confidentialité
+- **Informations de contact** :
+  - Email, téléphone et adresse avec icônes
+  - Liens cliquables (mailto:, tel:)
+  - Réseaux sociaux avec icônes Lucide
+  - Centrage sur mobile, aligné à gauche sur desktop
+- **Animations d'apparition** :
+  - Footer principal en fondu
+  - Colonnes en cascade avec délais (200-700ms)
+  - Mouvement de bas en haut
+  - Effet de ligne au hover sur les liens
+- **Bottom bar** :
+  - Copyright avec année dynamique
+  - Lien cliquable vers le site de la société
+  - Liens légaux (Terms, Privacy)
+  - Bordure supérieure bleue
+
+### 10. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore

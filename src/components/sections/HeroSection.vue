@@ -67,7 +67,7 @@
 
           <div class="pt-0 sm:pt-6 lg:pt-8">
             <button
-              @click="scrollToSection('contact')"
+              @click="navigateToContact"
               class="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-oozami-lightblue text-oozami-lightblue font-semibold hover:bg-oozami-lightblue hover:text-white transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
             >
               {{ $t('hero.cta') }}
@@ -107,6 +107,13 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import heroImageImport from '@/assets/images/hero-trans.png'
 import bgHeroImage from '@/assets/images/bg-hero.jpg'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const navigateToContact = () => {
+  router.push('/contact')
+}
 
 declare global {
   interface Window {

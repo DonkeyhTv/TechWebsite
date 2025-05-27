@@ -231,5 +231,36 @@
   },
   "scrollToTop": {
     "ariaLabel": "Retour en haut de la page"
+  },
+  "pages": {
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "contact": "Contact"
+  },
+  "contactInfo": {
+    "office": {
+      "title": "Studio digital indépendant",
+      "address1": "Travail à distance depuis Tournai, Belgique",
+      "hours": "Horaires",
+      "schedule1": "Lun - Ven: 9h00 - 18h00",
+      "schedule2": "Sam - Dim: 9h00 - 14h00"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "emailLabel": "Email",
+      "phoneLabel": "Téléphone"
+    },
+    "response": {
+      "title": "Réponse Rapide",
+      "description": "Nous nous engageons à répondre à toutes les demandes dans les 24 heures ouvrées.",
+      "rate": "Taux de réponse sous 24h"
+    },
+    "map": {
+      "placeholder": "Carte interactive - Google Maps"
+    }
   }
 }

@@ -45,6 +45,15 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('@/views/Contact.vue'),
+    meta: {
+      title: 'Contact',
+      description: 'Contactez OOZAMI pour vos projets digitaux',
+    },
+  },
 ]
 
 const router = createRouter({
