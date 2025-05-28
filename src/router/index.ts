@@ -54,6 +54,15 @@ const routes: RouteRecordRaw[] = [
       description: 'Contactez OOZAMI pour vos projets digitaux',
     },
   },
+  {
+    path: '/technologies',
+    name: 'Technologies',
+    component: () => import('@/views/Technologies.vue'),
+    meta: {
+      title: 'Technologies',
+      description: 'Technologies utilisées par OOZAMI',
+    },
+  },
 ]
 
 const router = createRouter({

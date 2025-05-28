@@ -235,11 +235,23 @@
   "pages": {
     "contact": {
       "title": "Contact"
+    },
+    "technologies": {
+      "title": "Technologies"
     }
   },
   "breadcrumb": {
     "home": "Home",
-    "contact": "Contact"
+    "contact": "Contact",
+    "technologies": "Technologies"
+  },
+  "technologies": {
+    "badge": "Our Stack",
+    "subtitle": "Technologies We Master",
+    "description": "We use the latest technologies to create high-performance, scalable, and secure digital solutions."
+  },
+  "common": {
+    "loading": "Loading..."
   },
   "contactInfo": {
     "office": {

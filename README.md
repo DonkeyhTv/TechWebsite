@@ -41,117 +41,73 @@ Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesu
 - **Sitemap XML** multilingue
 - **Performance optimisée** avec lazy loading
 
-## 📦 Stack Technique
+## 🛠️ Technologies Utilisées
 
-### Core
+### Frontend Core
 
-- **Vue.js 3.4** - Framework JavaScript progressif
-- **TypeScript 5.0** - Typage statique
-- **Vite 5.0** - Build tool ultra-rapide
-- **Vue Router 4** - Routing SPA
+- **Vue.js 3.4** - Framework JavaScript progressif avec Composition API
+- **TypeScript 5.0** - JavaScript avec typage statique pour une meilleure robustesse
+- **Vite 5.0** - Build tool ultra-rapide pour le développement moderne
+- **Vue Router 4** - Navigation SPA avec routing dynamique
 
-### Styling
+### Styling & UI
 
-- **Tailwind CSS 3.4** - Framework CSS utility-first
-- **PostCSS** - Transformations CSS
-- **Police Jost** - Typography personnalisée
-- **Flaticon** - Icônes professionnelles
+- **Tailwind CSS 3.4** - Framework CSS utility-first pour styling rapide et responsive
+- **PostCSS** - Transformations CSS avancées
+- **Police Jost** - Typography moderne et élégante
+- **Lucide Vue Next** - Icônes SVG modernes et optimisées
 
-### Fonctionnalités
+### Icônes & Assets
 
-- **Vue i18n** - Internationalisation
-- **Particles.js** - Animations de particules
-- **Isotope Layout** - Filtrage et arrangement de grille dynamique
-- **Lucide Vue Next** - Icônes modernes
-- **@vueuse/head** - Gestion des meta tags
-- **@flaticon/flaticon-uicons** - Bibliothèque d'icônes
+- **Devicons** - Police d'icônes spécialisée pour technologies de développement
+- **Simple Icons** - Collection SVG d'icônes de marques populaires via CDN
+- **Flaticon & @flaticon/flaticon-uicons** - Bibliothèque d'icônes professionnelles
 
-### Développement
+### Fonctionnalités Avancées
 
-- **ESLint** - Linting du code
-- **Prettier** - Formatage du code
-- **Pinia** - State management
-- **TypeScript ESLint** - Linting TypeScript
+- **Vue i18n** - Système d'internationalisation FR/EN complet
+- **Particles.js** - Animations de particules pour effets visuels
+- **Isotope Layout** - Filtrage et arrangement de grille dynamique pour portfolio
+- **@vueuse/head** - Gestion dynamique des meta tags pour SEO
+- **Intersection Observer API** - Animations au scroll optimisées
 
-## 🏗️ Structure du Projet
+### Outils de Développement
 
+- **ESLint** - Linting du code JavaScript/TypeScript
+- **Prettier** - Formatage automatique du code
+- **Pinia** - State management moderne pour Vue 3
+- **TypeScript ESLint** - Linting spécialisé TypeScript
+
+### Composant Technologies - Fonctionnalités
+
+#### Affichage Multi-Sources Intelligent
+
+```typescript
+interface Technology {
+  id: number
+  name: string
+  devicon?: string // Classe Devicon (priorité)
+  simpleIcon?: string // Slug Simple Icons
+  img?: string // Image locale (fallback)
+  color?: string // Couleur personnalisée
+}
 ```
-oozami/
-├── public/
-│   ├── favicon.ico
-│   ├── robots.txt
-│   └── sitemap.xml
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   │   ├── hero-trans.png
-│   │   │   ├── bg-hero.jpg
-│   │   │   ├── portfolio-placeholder.jpg
-│   │   │   ├── client-logo-placeholder.png (1-6)
-│   │   │   ├── testimonials-bg.jpg
-│   │   │   ├── google-logo.png
-│   │   │   └── footer-bg.jpg
-│   │   └── main.css
-│   ├── components/
-│   │   ├── AppHeader.vue
-│   │   ├── AppFooter.vue              # Footer principal
-│   │   ├── HeroSection.vue
-│   │   ├── PageLoader.vue
-│   │   ├── StructuredData.vue
-│   │   ├── ServicesSection.vue
-│   │   ├── PortfolioSection.vue
-│   │   ├── ClientsSection.vue         # Section carousel logos
-│   │   ├── TestimonialsSection.vue    # Section témoignages
-│   │   ├── ContactSection.vue         # Section formulaire contact
-│   │   ├── ScrollToTop.vue            # Bouton retour en haut
-│   │   ├── header/
-│   │   │   ├── HeaderActions.vue
-│   │   │   ├── HeaderLanguagesSelector.vue
-│   │   │   ├── HeaderLogo.vue
-│   │   │   ├── HeaderMobile.vue
-│   │   │   └── HeaderNavigation.vue
-│   │   ├── footer/
-│   │   │   ├── FooterCompany.vue
-│   │   │   ├── FooterLinks.vue
-│   │   │   ├── FooterResources.vue
-│   │   │   ├── FooterContact.vue
-│   │   │   └── FooterBottom.vue
-│   │   └── sections/
-│   │       └── SitecoreAnalyticsSection.vue
-│   ├── composables/
-│   │   ├── useLoader.ts
-│   │   ├── useSEO.ts
-│   │   ├── useSitecoreAnalytics.ts
-│   │   └── useI18n.ts
-│   ├── data/
-│   │   ├── services.json
-│   │   └── portfolio.json            # Données du portfolio
-│   ├── layouts/
-│   │   └── DashboardLayout.vue
-│   ├── locales/
-│   │   ├── fr.json
-│   │   ├── en.json
-│   │   └── index.ts
-│   ├── router/
-│   │   └── index.ts
-│   ├── views/
-│   │   ├── Home.vue
-│   │   └── dashboard/
-│   │       ├── DashboardHome.vue
-│   │       ├── DashboardVisitors.vue
-│   │       ├── DashboardGoals.vue
-│   │       ├── DashboardPersonalization.vue
-│   │       ├── DashboardReports.vue
-│   │       └── DashboardSettings.vue
-│   ├── App.vue
-│   └── main.ts
-├── .gitignore
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── vite.config.ts
-```
+
+#### Système de Fallback Robuste
+
+1. **Devicons** - Police d'icônes spécialisée (priorité)
+2. **Simple Icons** - Icônes SVG via CDN avec couleurs personnalisées
+3. **Images locales** - Assets personnalisés stockés localement
+4. **Fallback ultime** - Première lettre avec arrière-plan coloré généré
+
+#### Performance & UX
+
+- **Grid responsive** adaptée à tous les écrans (2-6 colonnes)
+- **Animations d'entrée** avec IntersectionObserver pour performance optimale
+- **Effets de hover** avec transformations CSS fluides
+- **Support dark mode** avec inversion automatique des icônes SVG
+- **Gestion d'erreurs** pour éviter les éléments cassés
+- **Chargement dynamique** via API avec système de cache
 
 ## 🛠️ Installation
 
@@ -198,154 +154,11 @@ colors: {
 
 ### Traductions
 
-Les fichiers de traduction sont dans `/src/locales/`:
-
-- `fr.json` - Français
-- `en.json` - Anglais
-
-Exemple pour la section Services :
-
-```json
-{
-  "services": {
-    "badge": "Digital Marketing",
-    "title": "Services We Offer",
-    "subtitle": "Lorem ipsum dolor sit amet...",
-    "techButton": "Techs We Use",
-    "readMore": "Read More"
-  }
-}
-```
-
-Exemple pour la section Portfolio :
-
-```json
-{
-  "portfolio": {
-    "badge": "Our Portfolio",
-    "title": "Latest Projects",
-    "seeMore": "See All Projects",
-    "filters": {
-      "all": "All",
-      "web-development": "Web Development",
-      "web-design": "Web Design",
-      "graphic": "Graphic Design"
-    },
-    "categories": {
-      "web-development": "Development",
-      "web-design": "Design",
-      "graphic": "Graphic"
-    }
-  }
-}
-```
-
-Exemple pour le Footer :
-
-```json
-{
-  "footer": {
-    "description": "Description de votre entreprise...",
-    "newsletter": {
-      "title": "S'abonner à notre Newsletter",
-      "placeholder": "Adresse Email",
-      "button": "S'abonner",
-      "privacy": "* Nous ne partagerons pas vos informations"
-    },
-    "links": {
-      "title": "Liens Utiles"
-    },
-    "resources": {
-      "title": "Ressources",
-      "support": "Support",
-      "dashboard": "Dashboard",
-      "drivers": "Drivers",
-      "projects": "Projets"
-    },
-    "contact": {
-      "title": "Informations de Contact",
-      "address": "Votre adresse ici"
-    },
-    "createdBy": "Créé par:",
-    "companyName": "OOZAMI",
-    "terms": "Conditions d'Utilisation",
-    "privacy": "Politique de Confidentialité"
-  }
-}
-```
-
-Exemple pour la section Contact :
-
-```json
-{
-  "contact": {
-    "badge": "Contact",
-    "title": "Contactez-Nous",
-    "subtitle": "Nous sommes là pour répondre à toutes vos questions",
-    "form": {
-      "firstName": "Prénom",
-      "firstNamePlaceholder": "Votre prénom",
-      "lastName": "Nom",
-      "lastNamePlaceholder": "Votre nom",
-      "email": "Email",
-      "emailPlaceholder": "votre@email.com",
-      "phone": "Téléphone",
-      "phonePlaceholder": "+33 6 XX XX XX XX",
-      "message": "Message",
-      "messagePlaceholder": "Décrivez votre projet...",
-      "submit": "Envoyer le Message",
-      "sending": "Envoi en cours...",
-      "success": "Message envoyé avec succès !"
-    }
-  }
-}
-```
-
-Exemple pour la section Testimonials :
-
-```json
-{
-  "testimonials": {
-    "badge": "Témoignages",
-    "title": "Ce Que Disent Nos Clients",
-    "basedOn": "Basé sur",
-    "reviews": "avis"
-  }
-}
-```
-
-Exemple pour la section Clients :
-
-```json
-{
-  "clients": {
-    "title": "Ils nous ont fait confiance"
-  }
-}
-```
-
-Exemple pour la section Why Choose Us :
-
-```json
-{
-  "whyChooseUs": {
-    "badge": "Why Choose Us",
-    "title": "Lorem Dolore Sit Amet",
-    "description": "Lorem ipsum dolor sit amet...",
-    "items": {
-      "item1": {
-        "title": "Lorem Dolore",
-        "description": "Lorem ipsum dolor sit amet..."
-      }
-    },
-    "ctaButton": "Get In Touch"
-  }
-}
-```
+Les fichiers de traduction sont dans `/src/locales/` avec support complet FR/EN pour toutes les sections du site.
 
 ### SEO
 
-Meta tags à configurer dans `/src/composables/useSEO.ts`
+Meta tags configurables dans `/src/composables/useSEO.ts` avec données structurées Schema.org.
 
 ## 📱 Fonctionnalités Principales
 
@@ -357,218 +170,61 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
 
 ### 2. Section Services
 
-- **Grille responsive** de 6 cartes de services (3x2 sur desktop, 2x3 sur tablette, 1x6 sur mobile)
+- **Grille responsive** de 6 cartes de services
 - **Effet hover unique** : fond bleu qui glisse de gauche à droite
-- **Animation au scroll** : apparition progressive des cartes avec effet de vague
+- **Animation au scroll** : apparition progressive avec effet de vague
 - **Icônes Flaticon** personnalisables
-- **Support i18n** pour tous les textes
-- **Dark mode** compatible
-
-#### Animations de la section Services :
-
-- **Header et bouton** : apparition avec délai progressif
-- **Cartes** : apparition en vague (gauche vers droite) par rangée
-- **Hover effects** :
-  - Fond bleu glissant avec scale X
-  - Textes devenant blancs
-  - Icône SVG qui grandit
-  - Bordure de l'icône qui change
+- **Support i18n** complet
 
 ### 3. Section About Us
 
-- **Grille 2 colonnes** : contenu à gauche, image à droite
-- **Image avec effet parallaxe 3D** au survol (comme HeroSection)
-- **4 items avec icônes Flaticon** dans une grille 2x2
-- **Animations au scroll** :
-  - Header : fade-in du bas (100ms)
-  - Colonne gauche : slide depuis la gauche (400ms)
-  - Colonne droite : slide depuis la droite (600ms)
-- **Effets hover sur les items** :
-  - Élévation avec translate Y
-  - Fond de l'icône qui devient plein bleu
-  - Ombre portée bleue sur l'icône
-  - Transitions fluides de 300ms
-- **Support complet i18n** avec structure Lorem Ipsum
-- **Responsive** : passe en 1 colonne sur mobile
+- **Grille 2 colonnes** avec image parallaxe 3D
+- **4 items avec icônes** dans une grille responsive
+- **Animations au scroll** optimisées
+- **Effets hover** avec élévation et transitions fluides
 
 ### 4. Section Why Choose Us
 
-- **Grille 2 colonnes** : image avec effet parallaxe à gauche, contenu à droite
-- **Fond sombre** : utilise `bg-oozami-darkblue` pour créer une section contrastée
-- **Effet parallaxe 3D** sur l'image (identique aux autres sections)
-- **3 points numérotés** avec design moderne :
-  - Numéros en grand (01., 02., 03.) en couleur `oozami-lightblue`
-  - Titre et description pour chaque point
-  - Espacement vertical généreux
-- **Animations au scroll** :
-  - Image : slide depuis la gauche (200ms)
-  - Contenu : slide depuis la droite (400ms)
-- **Badge et titre** avec le même style que les autres sections
-- **Bouton CTA** "Get In Touch" avec style cohérent
-- **Responsive** :
-  - Mobile : image en haut, contenu en bas
-  - Desktop : image à gauche, contenu à droite
-  - Adaptation des tailles de texte et espacements
+- **Design contrasté** avec fond sombre
+- **Effet parallaxe 3D** sur l'image
+- **3 points numérotés** avec design moderne
+- **Animations au scroll** depuis les côtés
 
 ### 5. Section Portfolio
 
-- **Grille dynamique avec Isotope.js** : arrangement automatique des éléments
-- **Système de filtrage** par catégorie :
-  - All (tous les projets)
-  - Web Development
-  - Web Design
-  - Graphic Design
-- **Animations sophistiquées** :
-  - Header et filtres : apparition progressive au scroll
-  - Items : apparition initiale fluide
-  - Filtrage : transitions smooth avec scale et opacité
-  - Réarrangement sans rebond grâce à l'optimisation CSS
-- **Effets hover sur les vignettes** :
-  - Scale de 1.05 sur le contenu uniquement
-  - Barre d'information qui glisse du bas
-  - Badge de catégorie qui apparaît
-  - Icône de flèche animée
-- **Design moderne** :
-  - Vignettes avec coins arrondis
-  - Overlay sombre avec backdrop blur
-  - Badge de catégorie flottant
-  - Aspect ratio 16:12 pour les images
-- **Responsive** :
-  - Desktop : grille 3 colonnes
-  - Tablette : grille 2 colonnes
-  - Mobile : grille 1 colonne
-  - Espacement adaptatif entre les éléments
-- **Performance optimisée** :
-  - Lazy loading des images
-  - Animations CSS uniquement
-  - Pas de conflits entre Isotope et les transitions CSS
+- **Grille dynamique avec Isotope.js**
+- **Système de filtrage** par catégorie
+- **Animations sophistiquées** avec transitions smooth
+- **Effets hover** avec overlay et badges
+- **Performance optimisée** avec lazy loading
 
 ### 6. Section Clients
 
-- **Carousel infini de logos** : rotation automatique des logos clients
-- **Grille responsive** : 6 colonnes sur desktop, 3 sur tablette, 2 sur mobile
-- **Effet carousel circulaire** :
-  - Rotation complète toutes les 3.5 secondes
-  - Le premier logo devient le deuxième, etc.
-  - Pas de glissement horizontal, transitions en place
-- **Effet de vague** :
-  - Chaque logo apparaît avec un délai de 80ms
-  - Animation progressive de gauche à droite
-  - Transitions fluides avec scale et fade
-- **Design des logos** :
-  - Cartes blanches de 125px de hauteur
-  - Logos zoomés à 125% pour meilleure visibilité
-  - Coins arrondis et ombres portées
-  - Fond bleu OOZAMI
-- **Effets interactifs** :
-  - Logos en grayscale par défaut
-  - Couleur au hover avec transition fluide
-  - Élévation de la carte au survol
-  - Overlay subtil au hover
-- **Animations optimisées** :
-  - Mode "out-in" pour éviter les chevauchements
-  - Transitions : 0.6s entrée, 0.4s sortie
-  - Scale + translateY pour effet moderne
-- **Titre simple** : "Ils nous ont fait confiance" (28px, centré)
+- **Carousel infini** de logos clients
+- **Effet de vague** avec délais progressifs
+- **Logos interactifs** avec grayscale/couleur
+- **Rotation automatique** toutes les 3.5 secondes
 
 ### 7. Section Testimonials
 
-- **Fond avec image fixe** : effet parallaxe avec overlay sombre (85% opacité)
-- **En-tête avec notation Google** :
-  - Note moyenne affichée (4.8/5 étoiles)
-  - Nombre total d'avis (127)
-  - Logo Google pour l'authenticité
-  - Badge "Témoignages" avec style cohérent
-- **Carousel de témoignages** :
-  - 5 témoignages avec rotation automatique
-  - Auto-play toutes les 5 secondes
-  - Navigation manuelle avec flèches
-  - Indicateurs de position (dots)
-- **Design des cartes témoignages** :
-  - Effet glassmorphism (fond blanc 10% + backdrop blur)
-  - Avatar avec initiale du client
-  - Système de notation par étoiles (1-5)
-  - Citation mise en valeur avec guillemets
-  - Informations client : nom, entreprise, date
-- **Animations fluides** :
-  - Slide horizontal entre témoignages
-  - Fade-in progressif au scroll
-  - Transitions douces de 0.5s
-- **Responsive design** :
-  - Avatar caché sur mobile
-  - Adaptation des tailles de texte
-  - Navigation tactile optimisée
-- **Données en dur** : Lorem ipsum temporaire en attendant l'intégration API Google Places
+- **Fond parallaxe** avec overlay
+- **En-tête avec notation Google** authentique
+- **Carousel automatique** de témoignages
+- **Design glassmorphism** moderne
 
 ### 8. Section Contact
 
-- **Formulaire centré** avec layout simple et épuré
-- **En-tête minimaliste** :
-  - Badge "Contact" avec style cohérent
-  - Titre et description centrés
-  - Support dark mode complet
-- **Champs du formulaire** :
-  - 5 champs : prénom, nom, email, téléphone, message
-  - Email et téléphone sur la même ligne (responsive)
-  - Fonds transparents avec bordures grises
-  - Bordure bleue et ring au focus
-- **Interactions dynamiques** :
-  - Labels qui changent de couleur au focus du champ
-  - Variable activeField pour tracker le champ sélectionné
-  - Transitions fluides de 300ms sur tous les éléments
-- **Animations au scroll** :
-  - Header : fade-in depuis le haut (100ms)
-  - Formulaire : fade-in depuis le bas (300ms)
-  - Champs : apparition en cascade (400ms + 100ms par champ)
-- **Bouton d'envoi** :
-  - Centré avec coins arrondis personnalisés
-  - État de chargement avec spinner animé
-  - Désactivé pendant l'envoi
-- **Message de succès** :
-  - Apparition avec transition fade
-  - Auto-disparition après 5 secondes
-  - Reset automatique du formulaire
-- **Styles optimisés** :
-  - Override des styles navigateur par défaut
-  - Placeholders visibles sur fond transparent
-  - Support complet du dark mode
+- **Formulaire centré** avec 5 champs
+- **Interactions dynamiques** avec focus tracking
+- **Animations en cascade** au scroll
+- **États de chargement** et validation
 
-### 9. Footer
+### 9. Footer Modulaire
 
-- **Structure modulaire** avec 5 composants séparés :
-  - AppFooter (conteneur principal)
-  - FooterCompany (logo, description, newsletter)
-  - FooterLinks (liens utiles externes)
-  - FooterResources (navigation interne)
-  - FooterContact (informations de contact)
-  - FooterBottom (copyright et liens légaux)
-- **Design avec fond image** :
-  - Image de fond avec opacité 20%
-  - Motif de points flous en overlay
-  - Fond bleu foncé (oozami-darkblue)
-- **Grille responsive asymétrique** :
-  - Company et Contact : 4 colonnes (33%)
-  - Links et Resources : 2 colonnes (17%)
-  - 1 colonne sur mobile
-- **Newsletter intégré** :
-  - Formulaire d'inscription dans FooterCompany
-  - Validation email HTML5
-  - Message de confidentialité
-- **Informations de contact** :
-  - Email, téléphone et adresse avec icônes
-  - Liens cliquables (mailto:, tel:)
-  - Réseaux sociaux avec icônes Lucide
-  - Centrage sur mobile, aligné à gauche sur desktop
-- **Animations d'apparition** :
-  - Footer principal en fondu
-  - Colonnes en cascade avec délais (200-700ms)
-  - Mouvement de bas en haut
-  - Effet de ligne au hover sur les liens
-- **Bottom bar** :
-  - Copyright avec année dynamique
-  - Lien cliquable vers le site de la société
-  - Liens légaux (Terms, Privacy)
-  - Bordure supérieure bleue
+- **5 composants séparés** pour maintenance facile
+- **Design avec fond image** et overlay
+- **Newsletter intégré** avec validation
+- **Animations d'apparition** en cascade
 
 ### 10. Dashboard Analytics
 
@@ -576,20 +232,6 @@ Meta tags à configurer dans `/src/composables/useSEO.ts`
 - Profils de personnalisation Sitecore
 - Métriques et KPIs interactifs
 - Export de rapports
-
-### 8. Système de Navigation
-
-- Header sticky avec changement de style au scroll
-- Menu mobile hamburger animé
-- Sélecteur de langue intégré
-- Mode sombre/clair
-
-### 9. Loader de Page
-
-- Animation de chargement personnalisée
-- Progression de 0 à 100%
-- Durée minimale de 2 secondes
-- Effet d'ouverture du centre
 
 ## 🔧 Scripts Disponibles
 
@@ -638,7 +280,7 @@ Ce projet est sous licence privée - Copyright © 2025 Steve Amissi
 
 ## 👥 Auteur
 
-**INFO**
+**Steve Amissi**
 
 - Location: Tournai, Belgique
 

@@ -66,12 +66,12 @@
           </p>
 
           <div class="pt-0 sm:pt-6 lg:pt-8">
-            <button
-              @click="navigateToContact"
-              class="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-oozami-lightblue text-oozami-lightblue font-semibold hover:bg-oozami-lightblue hover:text-white transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
+            <router-link
+              to="/contact"
+              class="group inline-flex items-center px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-oozami-lightblue hover:bg-transparent border-2 border-oozami-lightblue text-white hover:text-oozami-lightblue font-semibold transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
             >
               {{ $t('hero.cta') }}
-            </button>
+            </router-link>
           </div>
         </div>
 

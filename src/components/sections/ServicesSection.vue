@@ -34,7 +34,8 @@
           class="text-center lg:text-right fade-in-up opacity-0 w-full lg:w-auto"
         >
           <div>
-            <button
+            <router-link
+              to="/technologies"
               class="group inline-flex items-center px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-oozami-lightblue hover:bg-transparent border-2 border-oozami-lightblue text-white hover:text-oozami-lightblue font-semibold transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
             >
               {{ $t('services.techButton') }}
@@ -52,7 +53,7 @@
                   d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                 />
               </svg>
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
