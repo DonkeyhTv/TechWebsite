@@ -153,19 +153,33 @@
   },
   "portfolio": {
     "badge": "Portfolio",
-    "title": "Nos Réalisations",
-    "seeMore": "Voir Plus",
+    "title": "Derniers Projets",
+    "pageTitle": "Notre Portfolio Complet",
+    "pageDescription": "Découvrez l'ensemble de nos réalisations, des sites web aux applications mobiles en passant par l'identité visuelle.",
+    "seeMore": "Voir Tous les Projets",
     "filters": {
-      "all": "Tout",
+      "all": "Tous",
       "web-development": "Développement Web",
       "web-design": "Design Web",
-      "graphic": "Graphisme"
+      "graphic": "Design Graphique",
+      "mobile": "Applications Mobiles"
     },
     "categories": {
-      "web-development": "Développement Web",
-      "web-design": "Design Web",
-      "graphic": "Design Graphique"
-    }
+      "web-development": "Développement",
+      "web-design": "Design",
+      "graphic": "Graphique",
+      "mobile": "Mobile"
+    },
+    "stats": {
+      "projects": "Projets Réalisés",
+      "categories": "Catégories",
+      "satisfaction": "Satisfaction Client"
+    },
+    "resultsText": "projets trouvés dans",
+    "view": "Voir",
+    "live": "Live",
+    "loadMore": "Charger Plus",
+    "loading": "Chargement..."
   },
   "clients": {
     "title": "Ils nous ont fait confiance"

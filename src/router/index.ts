@@ -63,6 +63,16 @@ const routes: RouteRecordRaw[] = [
       description: 'Technologies utilisées par OOZAMI',
     },
   },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: () => import('@/views/Portfolio.vue'),
+    meta: {
+      title: 'Portfolio',
+      description:
+        'Découvrez notre portfolio complet avec tous nos projets de développement web, design et applications mobiles.',
+    },
+  },
 ]
 
 const router = createRouter({

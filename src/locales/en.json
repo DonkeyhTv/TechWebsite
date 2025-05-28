@@ -153,19 +153,33 @@
   },
   "portfolio": {
     "badge": "Portfolio",
-    "title": "What We Have Done",
-    "seeMore": "See More",
+    "title": "Latest Projects",
+    "pageTitle": "Our Complete Portfolio",
+    "pageDescription": "Discover all our achievements, from websites to mobile applications and visual identity.",
+    "seeMore": "See All Projects",
     "filters": {
       "all": "All",
       "web-development": "Web Development",
       "web-design": "Web Design",
-      "graphic": "Graphic"
+      "graphic": "Graphic Design",
+      "mobile": "Mobile Apps"
     },
     "categories": {
-      "web-development": "Web Development",
-      "web-design": "Web Design",
-      "graphic": "Graphic Design"
-    }
+      "web-development": "Development",
+      "web-design": "Design",
+      "graphic": "Graphic",
+      "mobile": "Mobile"
+    },
+    "stats": {
+      "projects": "Completed Projects",
+      "categories": "Categories",
+      "satisfaction": "Client Satisfaction"
+    },
+    "resultsText": "projects found in",
+    "view": "View",
+    "live": "Live",
+    "loadMore": "Load More",
+    "loading": "Loading..."
   },
   "clients": {
     "title": "They Trusted Us"
