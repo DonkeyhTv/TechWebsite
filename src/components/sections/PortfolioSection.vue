@@ -23,11 +23,12 @@
             </h2>
           </div>
 
-          <button
+          <router-link
+            to="/portfolio"
             class="group inline-flex items-center px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-oozami-lightblue hover:bg-transparent border-2 border-oozami-lightblue text-white hover:text-oozami-lightblue font-semibold transition-all duration-300 transform hover:scale-105 rounded-tl-md rounded-tr-2xl rounded-br-md rounded-bl-2xl text-sm sm:text-base"
           >
             {{ $t('portfolio.seeMore') }}
-          </button>
+          </router-link>
         </div>
 
         <div ref="filtersRef" class="fade-in-down opacity-0 mt-8 flex flex-wrap gap-3 md:gap-4">

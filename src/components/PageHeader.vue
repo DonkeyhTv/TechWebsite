@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="page-header relative py-16 md:py-20 lg:py-24 bg-gradient-to-br from-oozami-darkblue to-oozami-darkblue/90 overflow-hidden"
-  >
+  <section class="page-header relative py-16 md:py-20 lg:py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img
         :src="headerBackground"
@@ -21,7 +19,9 @@
 
     <div class="container mx-auto px-4 max-w-7xl relative z-20">
       <div ref="headerContent" class="fade-in-up opacity-0 text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold text-oozami-black dark:text-white mb-6 transition-all duration-300"
+        >
           {{ title }}
         </h1>
 
@@ -31,7 +31,7 @@
               <router-link
                 v-if="!crumb.active"
                 :to="crumb.path"
-                class="text-gray-300 hover:text-white transition-colors duration-200"
+                class="text-oozami-black dark:text-white hover:text-oozami-lightblue transition-colors duration-200"
               >
                 {{ crumb.label }}
               </router-link>

@@ -73,6 +73,17 @@ const routes: RouteRecordRaw[] = [
         'Découvrez notre portfolio complet avec tous nos projets de développement web, design et applications mobiles.',
     },
   },
+  {
+    path: '/portfolio/:id',
+    name: 'ProjectDetail',
+    component: () => import('@/views/ProjectDetail.vue'),
+    props: true,
+    meta: {
+      title: 'Projet - OOZAMI',
+      description:
+        'Découvrez les détails de ce projet : technologies utilisées, défis relevés et solutions apportées.',
+    },
+  },
 ]
 
 const router = createRouter({

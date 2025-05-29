@@ -250,6 +250,10 @@
     "contact": {
       "title": "Contact"
     },
+    "portfolio": {
+      "title": "Toutes nos réalisations"
+    },
+
     "technologies": {
       "title": "Technologies"
     }
@@ -257,7 +261,8 @@
   "breadcrumb": {
     "home": "Accueil",
     "contact": "Contact",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "portfolio": "Portfolio"
   },
   "technologies": {
     "badge": "Notre Stack",

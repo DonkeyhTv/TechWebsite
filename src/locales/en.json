@@ -257,7 +257,8 @@
   "breadcrumb": {
     "home": "Home",
     "contact": "Contact",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "portfolio": "Portfolio"
   },
   "technologies": {
     "badge": "Our Stack",

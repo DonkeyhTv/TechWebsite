@@ -1,49 +1,14 @@
 <template>
   <div class="portfolio-page">
-    <section
-      class="hero-portfolio py-16 md:py-24 bg-gradient-to-br from-oozami-darkblue to-oozami-lightblue"
-    >
-      <div class="container mx-auto px-4 max-w-7xl text-center">
-        <div class="fade-in-down opacity-0" ref="heroRef">
-          <div class="flex items-center justify-center gap-2 mb-6">
-            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
-            <span class="uppercase text-white text-sm md:text-base font-medium tracking-wider">
-              {{ $t('portfolio.badge') }}
-            </span>
-            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
-          </div>
+    <PageHeader
+      :title="$t('portfolio.pageTitle')"
+      :description="$t('portfolio.pageDescription')"
+      :badge="$t('portfolio.badge')"
+      :stats="headerStats"
+      :breadcrumbs="breadcrumbs"
+    />
 
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            {{ $t('portfolio.pageTitle') }}
-          </h1>
-
-          <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
-            {{ $t('portfolio.pageDescription') }}
-          </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div class="text-center">
-              <div class="text-3xl md:text-4xl font-bold text-white mb-2">{{ totalProjects }}+</div>
-              <div class="text-white/80">{{ $t('portfolio.stats.projects') }}</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl md:text-4xl font-bold text-white mb-2">
-                {{ totalCategories }}
-              </div>
-              <div class="text-white/80">{{ $t('portfolio.stats.categories') }}</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl md:text-4xl font-bold text-white mb-2">100%</div>
-              <div class="text-white/80">{{ $t('portfolio.stats.satisfaction') }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="portfolio-section py-16 md:py-20 bg-white dark:bg-oozami-darkblue/5 transition-all duration-300"
-    >
+    <section class="portfolio-section py-16 md:py-20 transition-all duration-300">
       <div class="container mx-auto px-4 max-w-7xl lg:px-0">
         <div ref="filtersRef" class="fade-in-down opacity-0 mb-12">
           <div class="flex flex-wrap justify-center gap-3 md:gap-4">
@@ -55,7 +20,7 @@
                 'px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold text-sm md:text-base transition-all duration-300 transform hover:scale-105',
                 activeFilter === filter.key
                   ? 'bg-oozami-lightblue text-white shadow-lg'
-                  : 'bg-gray-100 dark:bg-gray-800 hover:bg-oozami-lightblue text-oozami-lightblue hover:text-white border border-oozami-lightblue/20 hover:border-oozami-lightblue transition-all duration-300',
+                  : ' hover:bg-oozami-lightblue text-oozami-lightblue hover:text-white border border-oozami-lightblue/50 hover:border-oozami-lightblue transition-all duration-300',
               ]"
             >
               {{ $t(`portfolio.filters.${filter.key}`) }}
@@ -131,7 +96,8 @@
 
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                      <button
+                      <router-link
+                        :to="`/portfolio/${item.id}`"
                         class="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg hover:bg-white/30 transition-colors duration-200"
                       >
                         <svg
@@ -154,9 +120,11 @@
                           />
                         </svg>
                         <span class="text-sm">{{ $t('portfolio.view') }}</span>
-                      </button>
-                      <button
+                      </router-link>
+                      <a
                         v-if="item.liveUrl"
+                        :href="item.liveUrl"
+                        target="_blank"
                         class="flex items-center gap-2 px-4 py-2 bg-oozami-lightblue hover:bg-oozami-lightblue/80 rounded-lg transition-colors duration-200"
                       >
                         <svg
@@ -174,7 +142,7 @@
                           />
                         </svg>
                         <span class="text-sm">{{ $t('portfolio.live') }}</span>
-                      </button>
+                      </a>
                     </div>
 
                     <div class="flex items-center gap-2 text-sm text-white/80">
@@ -240,8 +208,12 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import Isotope from 'isotope-layout'
 import portfolioImage from '@/assets/images/portfolio-placeholder.jpg'
+import PageHeader from '@/components/PageHeader.vue'
+
+const { t } = useI18n()
 
 interface PortfolioItem {
   id: number
@@ -274,6 +246,24 @@ const filters = [
   { key: 'graphic' },
   { key: 'mobile' },
 ]
+
+const breadcrumbs = computed(() => [
+  {
+    label: t('breadcrumb.home'),
+    path: '/',
+  },
+  {
+    label: t('breadcrumb.portfolio'),
+    path: '/portfolio',
+    active: true,
+  },
+])
+
+const headerStats = computed(() => [
+  { value: `${totalProjects.value}+`, label: t('portfolio.stats.projects') },
+  { value: totalCategories.value, label: t('portfolio.stats.categories') },
+  { value: '100%', label: t('portfolio.stats.satisfaction') },
+])
 
 const allPortfolioItems: PortfolioItem[] = [
   {
