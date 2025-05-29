@@ -37,7 +37,7 @@
   "seo": {
     "home": {
       "title": "Home - Web Agency & Digital Solutions",
-      "description": "OOZAMI, your digital partner in Tournai. We create high-performance websites, innovative designs and custom digital strategies to grow your business."
+      "description": "TECHWEBSITE, your digital partner in Tournai. We create high-performance websites, innovative designs and custom digital strategies to grow your business."
     },
     "services": {
       "title": "Our Services - Web Development, Design & Marketing",
@@ -45,11 +45,11 @@
     },
     "about": {
       "title": "About - Our Digital Expertise",
-      "description": "OOZAMI combines creativity and technology to transform your ideas into high-performance digital solutions. Discover our approach and our passionate team."
+      "description": "TECHWEBSITE combines creativity and technology to transform your ideas into high-performance digital solutions. Discover our approach and our passionate team."
     },
     "contact": {
       "title": "Contact - Let's Talk About Your Project",
-      "description": "Contact OOZAMI to discuss your digital project. Based in Tournai, we support Belgian and international companies in their digital transformation."
+      "description": "Contact TECHWEBSITE to discuss your digital project. Based in Tournai, we support Belgian and international companies in their digital transformation."
     },
     "dashboard": {
       "title": "Analytics Dashboard - Sitecore Demo",
@@ -258,7 +258,9 @@
     "home": "Home",
     "contact": "Contact",
     "technologies": "Technologies",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
   },
   "technologies": {
     "badge": "Our Stack",
@@ -288,6 +290,176 @@
     },
     "map": {
       "placeholder": "Interactive Map - Google Maps"
+    }
+  },
+  "terms": {
+    "pageTitle": "Terms of Service",
+    "pageDescription": "Review our terms of service and conditions to understand your rights and obligations when using our services.",
+    "badge": "Legal Terms",
+    "introduction": "These terms of service govern your access to and use of our services. By using our services, you agree to be bound by these terms.",
+    "importantNotice": "Important Information",
+    "lastUpdated": "Last updated",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "subtitle": "Your agreement with our terms of service",
+        "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site."
+      },
+      "services": {
+        "title": "Description of Services",
+        "subtitle": "What we offer and how it works",
+        "content": "TECHWEBSITE provides web development, design, and digital marketing services. Our services include web and mobile application development, UI/UX design and graphic design, digital marketing and SEO services, and digital transformation consulting. We reserve the right to modify, suspend, or discontinue any or all of our services at any time."
+      },
+      "accounts": {
+        "title": "User Accounts",
+        "subtitle": "Creating and managing your account",
+        "content": "For certain services, you will need to create an account. You are responsible for maintaining the confidentiality of your password, for all activities that occur under your account, and for notifying us immediately of any unauthorized use. We reserve the right to refuse service, terminate accounts, or edit content at our sole discretion."
+      },
+      "payment": {
+        "title": "Payments and Billing",
+        "subtitle": "Payment terms and refund policies",
+        "content": "Payment terms vary depending on the type of service contracted. Specific terms are defined in each service contract.",
+        "subsections": {
+          "pricing": {
+            "title": "Pricing",
+            "content": "Our prices are indicated in euros (EUR) and include all applicable taxes unless otherwise stated. Prices may be changed at any time, but ongoing projects retain their initial pricing."
+          },
+          "billing": {
+            "title": "Billing",
+            "content": "Billing is carried out according to the terms agreed in the service contract. Invoices are payable within 30 days unless otherwise agreed."
+          },
+          "refunds": {
+            "title": "Refunds",
+            "content": "Refund requests are considered on a case-by-case basis depending on the nature of the service and project progress. Contact us to discuss your specific situation."
+          }
+        }
+      },
+      "intellectual-property": {
+        "title": "Intellectual Property",
+        "subtitle": "Copyright and ownership of creations",
+        "content": "Unless otherwise stated in the service contract: you retain ownership of your content and trademarks, creations made by TECHWEBSITE are transferred to you once full payment is made, TECHWEBSITE retains the right to use creations for portfolio and promotional purposes. We respect the intellectual property rights of others and expect our clients to do the same."
+      },
+      "privacy": {
+        "title": "Data Protection",
+        "subtitle": "How we protect your personal information",
+        "content": "Your privacy is important to us. Our privacy policy explains how we collect, use, and protect your personal information. By using our services, you consent to the collection and use of your information in accordance with our privacy policy."
+      },
+      "prohibited-uses": {
+        "title": "Prohibited Uses",
+        "subtitle": "What you cannot do with our services",
+        "content": "You may not use our services for illegal or unauthorized activities, violate intellectual property rights, transmit viruses or malicious code, harass, abuse, or harm other people, or collect personal information without authorization."
+      },
+      "termination": {
+        "title": "Termination",
+        "subtitle": "How and when these terms end",
+        "content": "These terms remain in effect until terminated by you or us. You may terminate them by ceasing to use our services. We may terminate your access immediately, without notice, for any legitimate reason, including violation of these terms."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "subtitle": "Our responsibilities and limitations",
+        "content": "To the extent permitted by law, TECHWEBSITE shall not be liable for indirect, incidental, special, or consequential damages resulting from the use of our services. Our total liability shall not exceed the amount you paid for the services concerned."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "subtitle": "How we update these terms",
+        "content": "We reserve the right to modify these terms at any time. Significant changes will be notified to you by email or via our website. Your continued use of our services after changes constitutes your acceptance of the new terms."
+      },
+      "governing-law": {
+        "title": "Governing Law",
+        "subtitle": "Applicable jurisdiction and laws",
+        "content": "These terms are governed by Belgian law. Any dispute shall be subject to the exclusive jurisdiction of the courts of Tournai, Belgium. If any provision of these terms is deemed invalid, the other provisions shall remain in effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "How to contact us for legal questions",
+        "content": "For any questions regarding these terms of service, you can contact us at legal{'@'}TECHWEBSITE.com or via our contact form."
+      }
+    },
+    "contact": {
+      "title": "Questions?",
+      "description": "If you have questions about these terms of service, please don't hesitate to contact us. Our team will be happy to help you.",
+      "button": "Contact Us"
+    }
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "pageDescription": "Learn how we collect, use, and protect your personal data. Your privacy is our priority.",
+    "badge": "Privacy",
+    "introduction": "At TECHWEBSITE, we respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and protect your information.",
+    "commitment": "Our Privacy Commitment",
+    "lastUpdated": "Last updated",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "collection": {
+        "title": "Data Collection",
+        "subtitle": "What information we collect and how",
+        "content": "We collect information when you visit our website, contact us, or use our services. This includes:<br><br><strong>Personal information:</strong> name, email address, phone number that you voluntarily provide to us.<br><br><strong>Technical data:</strong> IP address, browser type, pages visited, visit duration, and other navigation data collected automatically.<br><br><strong>Cookies and similar technologies:</strong> we use cookies to improve your user experience and analyze our website traffic."
+      },
+      "usage": {
+        "title": "Data Usage",
+        "subtitle": "How we use your personal information",
+        "content": "We use your personal data to:<br><br>• <strong>Provide our services:</strong> respond to your requests, manage your projects, and communicate with you<br>• <strong>Improve our website:</strong> analyze usage to optimize user experience<br>• <strong>Marketing:</strong> send you information about our services (with your consent)<br>• <strong>Legal obligations:</strong> comply with our legal and regulatory obligations<br><br>We never sell your personal data to third parties."
+      },
+      "sharing": {
+        "title": "Data Sharing",
+        "subtitle": "With whom we share your information",
+        "content": "We only share your personal data in the following cases:<br><br><strong>Service providers:</strong> we work with trusted partners who help us provide our services (hosting, analytics, email marketing). These providers are bound by confidentiality agreements.<br><br><strong>Legal obligations:</strong> we may disclose your information if required by law or to protect our legal rights.<br><br><strong>Consent:</strong> we may share your data with your explicit consent for specific purposes."
+      },
+      "cookies": {
+        "title": "Cookies and Similar Technologies",
+        "subtitle": "How we use cookies on our website",
+        "content": "We use different types of cookies to improve your experience on our website.",
+        "subsections": {
+          "essential": {
+            "title": "Essential Cookies",
+            "content": "These cookies are necessary for the website to function and cannot be disabled. They are usually set in response to actions you take that constitute a request for services."
+          },
+          "analytics": {
+            "title": "Analytics Cookies",
+            "content": "These cookies allow us to count visits and traffic sources to measure and improve our website's performance. They help us know which pages are most and least popular."
+          },
+          "marketing": {
+            "title": "Marketing Cookies",
+            "content": "These cookies may be set by our advertising partners. They may be used to build a profile of your interests and show you relevant ads on other sites."
+          }
+        }
+      },
+      "security": {
+        "title": "Data Security",
+        "subtitle": "How we protect your information",
+        "content": "We implement appropriate security measures to protect your personal data:<br><br>• <strong>Encryption:</strong> secure data transmission via HTTPS<br>• <strong>Restricted access:</strong> only authorized persons have access to your data<br>• <strong>Monitoring:</strong> regular monitoring of our security systems<br>• <strong>Training:</strong> educating our team on security best practices<br><br>However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "subtitle": "How long we keep your information",
+        "content": "We retain your personal data only for as long as necessary for the purposes for which it was collected:<br><br>• <strong>Contact data:</strong> 3 years after last contact<br>• <strong>Project data:</strong> 5 years after project completion for legal reasons<br>• <strong>Navigation data:</strong> 13 months for analytics cookies<br>• <strong>Newsletters:</strong> until you unsubscribe<br><br>After these periods, your data is securely deleted."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "subtitle": "What are your rights regarding your personal data",
+        "content": "Under GDPR, you have the following rights:<br><br>• <strong>Right of access:</strong> obtain a copy of your personal data<br>• <strong>Right to rectification:</strong> correct inaccurate data<br>• <strong>Right to erasure:</strong> request deletion of your data<br>• <strong>Right to restriction:</strong> limit the processing of your data<br>• <strong>Right to portability:</strong> retrieve your data in a structured format<br>• <strong>Right to object:</strong> object to the processing of your data<br><br>To exercise these rights, contact us at privacy{'@'}TECHWEBSITE.com"
+      },
+      "children": {
+        "title": "Protection of Minors",
+        "subtitle": "Our policy regarding minors' data",
+        "content": "Our services are not intended for persons under 16 years of age. We do not knowingly collect personal information from minors. If we discover that a minor has provided us with personal data, we will delete it immediately.<br><br>If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately."
+      },
+      "changes": {
+        "title": "Policy Changes",
+        "subtitle": "How we inform you of changes",
+        "content": "We may modify this privacy policy from time to time. Any significant changes will be notified to you by:<br><br>• Email if you are in our contact list<br>• Notification on our website<br>• Publication of the new version with the update date<br><br>We encourage you to regularly review this page to stay informed about our privacy practices."
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "How to contact us for privacy questions",
+        "content": "For any questions regarding this privacy policy or your personal data, you can contact us at privacy{'@'}TECHWEBSITE.com or via our contact form.<br><br>You can also contact us by mail at:<br>TECHWEBSITE<br>Data Protection<br>Tournai, Belgium"
+      }
+    },
+    "contact": {
+      "title": "Privacy Questions?",
+      "description": "If you have questions about our privacy policy or your personal data, our team is here to help.",
+      "button": "Contact Us"
     }
   }
 }

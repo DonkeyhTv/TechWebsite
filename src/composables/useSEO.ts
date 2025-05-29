@@ -1,122 +1,108 @@
-import { useHead } from '@unhead/vue'
+// composables/useSEO.ts
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
+import { useHead } from '@vueuse/head'
 
 interface SEOConfig {
   title?: string
   description?: string
-  keywords?: string[]
-  ogImage?: string
-  ogType?: string
-  twitterCard?: string
-  noindex?: boolean
-  canonical?: string
+  keywords?: string[] | string
+  image?: string
+  url?: string
+  type?: string
+  siteName?: string
 }
 
-export const useSEO = (config: SEOConfig = {}) => {
-  const route = useRoute()
-  const { locale } = useI18n()
+export function useSEO(config: SEOConfig = {}) {
+  const siteTitle = 'OOZAMI - Solutions Digitales'
+  const siteDescription =
+    'Agence digitale spécialisée dans le développement web, design et marketing digital à Tournai, Belgique.'
+  const siteUrl = 'https://oozami.com'
 
-  const baseUrl = 'https://oozami.com'
-  const defaultOgImage = `${baseUrl}/images/og-image.jpg`
+  const title = computed(() => config.title || siteTitle)
 
-  const seoData = computed(() => {
-    const currentUrl = `${baseUrl}${route.path}`
-    const siteName = 'OOZAMI'
+  const description = computed(() => config.description || siteDescription)
 
-    const titleTemplate = config.title ? `${siteName} | ${config.title}` : siteName
+  const keywords = computed(() => {
+    if (!config.keywords) return undefined
 
-    const defaultDescription =
-      locale.value === 'fr'
-        ? 'OOZAMI - Solutions digitales sur mesure : Design, Développement Web, Marketing Digital. Créons ensemble des expériences numériques innovantes pour faire rayonner votre activité.'
-        : "OOZAMI - Custom digital solutions: Design, Web Development, Digital Marketing. Let's create innovative digital experiences together to make your business shine."
-
-    return {
-      title: titleTemplate,
-      description: config.description || defaultDescription,
-      keywords:
-        config.keywords?.join(', ') ||
-        'design, développement web, marketing digital, sitecore, vue.js, solutions digitales, agence web, belgique',
-      ogImage: config.ogImage || defaultOgImage,
-      ogType: config.ogType || 'website',
-      twitterCard: config.twitterCard || 'summary_large_image',
-      canonical: config.canonical || currentUrl,
-      robots: config.noindex ? 'noindex, nofollow' : 'index, follow',
+    // Si c'est déjà un tableau, on le retourne
+    if (Array.isArray(config.keywords)) {
+      return config.keywords.join(', ')
     }
+
+    // Si c'est une chaîne, on la retourne directement
+    if (typeof config.keywords === 'string') {
+      return config.keywords
+    }
+
+    return undefined
   })
 
+  const image = computed(() => config.image || `${siteUrl}/assets/images/og-image.jpg`)
+
+  const url = computed(() => config.url || siteUrl)
+
   useHead({
-    title: seoData.value.title,
+    title: title,
     meta: [
       {
         name: 'description',
-        content: seoData.value.description,
+        content: description,
       },
       {
         name: 'keywords',
-        content: seoData.value.keywords,
+        content: keywords,
       },
-      {
-        name: 'robots',
-        content: seoData.value.robots,
-      },
+      // Open Graph
       {
         property: 'og:title',
-        content: seoData.value.title,
+        content: title,
       },
       {
         property: 'og:description',
-        content: seoData.value.description,
+        content: description,
       },
       {
         property: 'og:image',
-        content: seoData.value.ogImage,
-      },
-      {
-        property: 'og:type',
-        content: seoData.value.ogType,
+        content: image,
       },
       {
         property: 'og:url',
-        content: seoData.value.canonical,
+        content: url,
+      },
+      {
+        property: 'og:type',
+        content: config.type || 'website',
       },
       {
         property: 'og:site_name',
-        content: 'OOZAMI',
+        content: config.siteName || 'OOZAMI',
       },
-      {
-        property: 'og:locale',
-        content: locale.value === 'fr' ? 'fr_BE' : 'en_US',
-      },
+      // Twitter Card
       {
         name: 'twitter:card',
-        content: seoData.value.twitterCard,
+        content: 'summary_large_image',
       },
       {
         name: 'twitter:title',
-        content: seoData.value.title,
+        content: title,
       },
       {
         name: 'twitter:description',
-        content: seoData.value.description,
+        content: description,
       },
       {
         name: 'twitter:image',
-        content: seoData.value.ogImage,
-      },
-    ],
-    link: [
-      {
-        rel: 'canonical',
-        href: seoData.value.canonical,
+        content: image,
       },
     ],
   })
 
   return {
-    updateSEO: (newConfig: SEOConfig) => {
-      Object.assign(config, newConfig)
-    },
+    title,
+    description,
+    keywords,
+    image,
+    url,
   }
 }

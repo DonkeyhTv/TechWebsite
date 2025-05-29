@@ -37,7 +37,7 @@
   "seo": {
     "home": {
       "title": "Accueil - Agence Web & Solutions Digitales",
-      "description": "OOZAMI, votre partenaire digital à Tournai. Nous créons des sites web performants, des designs innovants et des stratégies digitales sur mesure pour faire grandir votre entreprise."
+      "description": "TECHWEBSITE, votre partenaire digital à Tournai. Nous créons des sites web performants, des designs innovants et des stratégies digitales sur mesure pour faire grandir votre entreprise."
     },
     "services": {
       "title": "Nos Services - Développement Web, Design & Marketing",
@@ -45,11 +45,11 @@
     },
     "about": {
       "title": "À Propos - Notre Expertise Digitale",
-      "description": "OOZAMI allie créativité et technologie pour transformer vos idées en solutions digitales performantes. Découvrez notre approche et notre équipe passionnée."
+      "description": "TECHWEBSITE allie créativité et technologie pour transformer vos idées en solutions digitales performantes. Découvrez notre approche et notre équipe passionnée."
     },
     "contact": {
       "title": "Contact - Parlons de Votre Projet",
-      "description": "Contactez OOZAMI pour discuter de votre projet digital. Basés à Tournai, nous accompagnons les entreprises belges et internationales dans leur transformation numérique."
+      "description": "Contactez TECHWEBSITE pour discuter de votre projet digital. Basés à Tournai, nous accompagnons les entreprises belges et internationales dans leur transformation numérique."
     },
     "dashboard": {
       "title": "Dashboard Analytics - Démonstration Sitecore",
@@ -262,7 +262,8 @@
     "home": "Accueil",
     "contact": "Contact",
     "technologies": "Technologies",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "terms": "Conditions d'Utilisation"
   },
   "technologies": {
     "badge": "Notre Stack",
@@ -292,6 +293,176 @@
     },
     "map": {
       "placeholder": "Carte interactive - Google Maps"
+    }
+  },
+  "terms": {
+    "pageTitle": "Conditions d'Utilisation",
+    "pageDescription": "Consultez nos conditions d'utilisation et termes de service pour comprendre vos droits et obligations lors de l'utilisation de nos services.",
+    "badge": "Mentions Légales",
+    "introduction": "Les présentes conditions d'utilisation régissent votre accès et votre utilisation de nos services. En utilisant nos services, vous acceptez d'être lié par ces conditions.",
+    "importantNotice": "Information Importante",
+    "lastUpdated": "Dernière mise à jour",
+    "tableOfContents": "Sommaire",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptation des Conditions",
+        "subtitle": "Votre accord avec nos termes de service",
+        "content": "En accédant et en utilisant ce site web, vous acceptez d'être lié par les présentes conditions d'utilisation, toutes les lois et réglementations applicables, et convenez que vous êtes responsable du respect des lois locales applicables. Si vous n'acceptez pas l'une de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce site."
+      },
+      "services": {
+        "title": "Description des Services",
+        "subtitle": "Ce que nous offrons et comment cela fonctionne",
+        "content": "TECHWEBSITE fournit des services de développement web, de design et de marketing digital. Nos services incluent le développement d'applications web et mobiles, la conception UI/UX et design graphique, les services de marketing digital et SEO, et le conseil en transformation digitale. Nous nous réservons le droit de modifier, suspendre ou interrompre tout ou partie de nos services à tout moment."
+      },
+      "accounts": {
+        "title": "Comptes Utilisateurs",
+        "subtitle": "Création et gestion de votre compte",
+        "content": "Pour certains services, vous devrez créer un compte. Vous êtes responsable de maintenir la confidentialité de votre mot de passe, de toutes les activités qui se produisent sous votre compte, et de nous informer immédiatement de toute utilisation non autorisée. Nous nous réservons le droit de refuser le service, de fermer des comptes ou de modifier le contenu à notre seule discrétion."
+      },
+      "payment": {
+        "title": "Paiements et Facturation",
+        "subtitle": "Conditions de paiement et politiques de remboursement",
+        "content": "Les conditions de paiement varient selon le type de service contracté. Les modalités spécifiques sont définies dans chaque contrat de service.",
+        "subsections": {
+          "pricing": {
+            "title": "Tarification",
+            "content": "Nos prix sont indiqués en euros (EUR) et incluent toutes les taxes applicables sauf mention contraire. Les prix peuvent être modifiés à tout moment, mais les projets en cours conservent leur tarification initiale."
+          },
+          "billing": {
+            "title": "Facturation",
+            "content": "La facturation s'effectue selon les modalités convenues dans le contrat de service. Les factures sont payables dans un délai de 30 jours sauf accord contraire."
+          },
+          "refunds": {
+            "title": "Remboursements",
+            "content": "Les demandes de remboursement sont étudiées au cas par cas selon la nature du service et l'avancement du projet. Contactez-nous pour discuter de votre situation spécifique."
+          }
+        }
+      },
+      "intellectual-property": {
+        "title": "Propriété Intellectuelle",
+        "subtitle": "Droits d'auteur et propriété des créations",
+        "content": "Sauf indication contraire dans le contrat de service : vous conservez la propriété de vos contenus et marques, les créations réalisées par TECHWEBSITE vous sont transférées une fois le paiement intégral effectué, TECHWEBSITE conserve le droit d'utiliser les créations à des fins de portfolio et de promotion. Nous respectons les droits de propriété intellectuelle d'autrui et attendons de nos clients qu'ils fassent de même."
+      },
+      "privacy": {
+        "title": "Protection des Données",
+        "subtitle": "Comment nous protégeons vos informations personnelles",
+        "content": "Votre vie privée est importante pour nous. Notre politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles. En utilisant nos services, vous consentez à la collecte et à l'utilisation de vos informations conformément à notre politique de confidentialité."
+      },
+      "prohibited-uses": {
+        "title": "Utilisations Interdites",
+        "subtitle": "Ce que vous ne pouvez pas faire avec nos services",
+        "content": "Vous ne pouvez pas utiliser nos services pour des activités illégales ou non autorisées, violer les droits de propriété intellectuelle, transmettre des virus ou codes malveillants, harceler, abuser ou nuire à d'autres personnes, ou collecter des informations personnelles sans autorisation."
+      },
+      "termination": {
+        "title": "Résiliation",
+        "subtitle": "Comment et quand ces conditions prennent fin",
+        "content": "Ces conditions restent en vigueur jusqu'à leur résiliation par vous ou par nous. Vous pouvez les résilier en cessant d'utiliser nos services. Nous pouvons résilier votre accès immédiatement, sans préavis, pour tout motif légitime, y compris la violation de ces conditions."
+      },
+      "liability": {
+        "title": "Limitation de Responsabilité",
+        "subtitle": "Nos responsabilités et limitations",
+        "content": "Dans les limites autorisées par la loi, TECHWEBSITE ne saurait être tenu responsable des dommages indirects, accessoires, spéciaux ou consécutifs résultant de l'utilisation de nos services. Notre responsabilité totale ne dépassera pas le montant que vous avez payé pour les services concernés."
+      },
+      "changes": {
+        "title": "Modifications des Conditions",
+        "subtitle": "Comment nous mettons à jour ces conditions",
+        "content": "Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications importantes vous seront notifiées par email ou via notre site web. Votre utilisation continue de nos services après les modifications constitue votre acceptation des nouvelles conditions."
+      },
+      "governing-law": {
+        "title": "Droit Applicable",
+        "subtitle": "Juridiction et lois applicables",
+        "content": "Ces conditions sont régies par le droit belge. Tout litige sera soumis à la juridiction exclusive des tribunaux de Tournai, Belgique. Si une disposition de ces conditions est jugée invalide, les autres dispositions resteront en vigueur."
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Comment nous contacter pour des questions légales",
+        "content": "Pour toute question concernant ces conditions d'utilisation, vous pouvez nous contacter à l'adresse legal{'@'}TECHWEBSITE.com ou via notre formulaire de contact."
+      }
+    },
+    "contact": {
+      "title": "Des Questions ?",
+      "description": "Si vous avez des questions concernant ces conditions d'utilisation, n'hésitez pas à nous contacter. Notre équipe se fera un plaisir de vous aider.",
+      "button": "Nous Contacter"
+    }
+  },
+  "privacy": {
+    "pageTitle": "Politique de Confidentialité",
+    "pageDescription": "Découvrez comment nous collectons, utilisons et protégeons vos données personnelles. Votre vie privée est notre priorité.",
+    "badge": "Confidentialité",
+    "introduction": "Chez TECHWEBSITE, nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+    "commitment": "Notre Engagement Confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "tableOfContents": "Sommaire",
+    "sections": {
+      "collection": {
+        "title": "Collecte des Données",
+        "subtitle": "Quelles informations nous collectons et comment",
+        "content": "Nous collectons des informations lorsque vous visitez notre site web, nous contactez, ou utilisez nos services. Cela inclut :<br><br><strong>Informations personnelles :</strong> nom, prénom, adresse email, numéro de téléphone que vous nous fournissez volontairement.<br><br><strong>Données techniques :</strong> adresse IP, type de navigateur, pages visitées, durée de visite, et autres données de navigation collectées automatiquement.<br><br><strong>Cookies et technologies similaires :</strong> nous utilisons des cookies pour améliorer votre expérience utilisateur et analyser le trafic de notre site."
+      },
+      "usage": {
+        "title": "Utilisation des Données",
+        "subtitle": "Comment nous utilisons vos informations personnelles",
+        "content": "Nous utilisons vos données personnelles pour :<br><br>• <strong>Fournir nos services :</strong> répondre à vos demandes, gérer vos projets, et communiquer avec vous<br>• <strong>Améliorer notre site :</strong> analyser l'utilisation pour optimiser l'expérience utilisateur<br>• <strong>Marketing :</strong> vous envoyer des informations sur nos services (avec votre consentement)<br>• <strong>Obligations légales :</strong> respecter nos obligations légales et réglementaires<br><br>Nous ne vendons jamais vos données personnelles à des tiers."
+      },
+      "sharing": {
+        "title": "Partage des Données",
+        "subtitle": "Avec qui nous partageons vos informations",
+        "content": "Nous ne partageons vos données personnelles que dans les cas suivants :<br><br><strong>Prestataires de services :</strong> nous travaillons avec des partenaires de confiance qui nous aident à fournir nos services (hébergement, analytics, email marketing). Ces prestataires sont tenus par des accords de confidentialité.<br><br><strong>Obligations légales :</strong> nous pouvons divulguer vos informations si la loi l'exige ou pour protéger nos droits légaux.<br><br><strong>Consentement :</strong> nous pouvons partager vos données avec votre consentement explicite pour des finalités spécifiques."
+      },
+      "cookies": {
+        "title": "Cookies et Technologies Similaires",
+        "subtitle": "Comment nous utilisons les cookies sur notre site",
+        "content": "Nous utilisons différents types de cookies pour améliorer votre expérience sur notre site web.",
+        "subsections": {
+          "essential": {
+            "title": "Cookies Essentiels",
+            "content": "Ces cookies sont nécessaires au fonctionnement du site et ne peuvent pas être désactivés. Ils sont généralement activés en réponse à des actions que vous effectuez et qui constituent une demande de services."
+          },
+          "analytics": {
+            "title": "Cookies Analytiques",
+            "content": "Ces cookies nous permettent de compter les visites et les sources de trafic pour mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires."
+          },
+          "marketing": {
+            "title": "Cookies Marketing",
+            "content": "Ces cookies peuvent être définis par nos partenaires publicitaires. Ils peuvent être utilisés pour créer un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites."
+          }
+        }
+      },
+      "security": {
+        "title": "Sécurité des Données",
+        "subtitle": "Comment nous protégeons vos informations",
+        "content": "Nous mettons en place des mesures de sécurité appropriées pour protéger vos données personnelles :<br><br>• <strong>Chiffrement :</strong> transmission sécurisée des données via HTTPS<br>• <strong>Accès restreint :</strong> seules les personnes autorisées ont accès à vos données<br>• <strong>Surveillance :</strong> contrôle régulier de nos systèmes de sécurité<br>• <strong>Formation :</strong> sensibilisation de notre équipe aux bonnes pratiques de sécurité<br><br>Cependant, aucune méthode de transmission sur Internet n'est 100% sécurisée. Nous ne pouvons garantir une sécurité absolue."
+      },
+      "retention": {
+        "title": "Conservation des Données",
+        "subtitle": "Combien de temps nous conservons vos informations",
+        "content": "Nous conservons vos données personnelles uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées :<br><br>• <strong>Données de contact :</strong> 3 ans après le dernier contact<br>• <strong>Données de projet :</strong> 5 ans après la fin du projet pour des raisons légales<br>• <strong>Données de navigation :</strong> 13 mois pour les cookies analytiques<br>• <strong>Newsletters :</strong> jusqu'à votre désinscription<br><br>Passé ces délais, vos données sont supprimées de manière sécurisée."
+      },
+      "rights": {
+        "title": "Vos Droits",
+        "subtitle": "Quels sont vos droits concernant vos données personnelles",
+        "content": "Conformément au RGPD, vous disposez des droits suivants :<br><br>• <strong>Droit d'accès :</strong> obtenir une copie de vos données personnelles<br>• <strong>Droit de rectification :</strong> corriger des données inexactes<br>• <strong>Droit à l'effacement :</strong> demander la suppression de vos données<br>• <strong>Droit à la limitation :</strong> limiter le traitement de vos données<br>• <strong>Droit à la portabilité :</strong> récupérer vos données dans un format structuré<br>• <strong>Droit d'opposition :</strong> vous opposer au traitement de vos données<br><br>Pour exercer ces droits, contactez-nous à privacy{'@'}TECHWEBSITE.com"
+      },
+      "children": {
+        "title": "Protection des Mineurs",
+        "subtitle": "Notre politique concernant les données des mineurs",
+        "content": "Nos services ne s'adressent pas aux personnes de moins de 16 ans. Nous ne collectons pas sciemment d'informations personnelles auprès de mineurs. Si nous découvrons qu'un mineur nous a fourni des données personnelles, nous les supprimerons immédiatement.<br><br>Si vous êtes parent ou tuteur et que vous pensez que votre enfant nous a fourni des données personnelles, contactez-nous immédiatement."
+      },
+      "changes": {
+        "title": "Modifications de la Politique",
+        "subtitle": "Comment nous vous informons des changements",
+        "content": "Nous pouvons modifier cette politique de confidentialité de temps à autre. Toute modification importante vous sera notifiée par :<br><br>• Email si vous êtes dans notre liste de contacts<br>• Notification sur notre site web<br>• Publication de la nouvelle version avec la date de mise à jour<br><br>Nous vous encourageons à consulter régulièrement cette page pour rester informé de nos pratiques de confidentialité."
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Comment nous contacter pour des questions sur la confidentialité",
+        "content": "Pour toute question concernant cette politique de confidentialité ou vos données personnelles, vous pouvez nous contacter à l'adresse privacy{'@'}TECHWEBSITE.com ou via notre formulaire de contact.<br><br>Vous pouvez également nous contacter par courrier postal à :<br>TECHWEBSITE<br>Protection des Données<br>Tournai, Belgique"
+      }
+    },
+    "contact": {
+      "title": "Questions sur la Confidentialité ?",
+      "description": "Si vous avez des questions concernant notre politique de confidentialité ou vos données personnelles, notre équipe est là pour vous aider.",
+      "button": "Nous Contacter"
     }
   }
 }

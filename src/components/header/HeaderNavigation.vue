@@ -27,10 +27,10 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { name: 'Accueil', href: '/', i18nKey: 'nav.home' },
-  { name: 'Services', href: '/#services', i18nKey: 'nav.services', section: 'services' },
-  { name: 'Portfolio', href: '/#portfolio', i18nKey: 'nav.portfolio', section: 'portfolio' },
-  { name: 'À propos', href: '/#about', i18nKey: 'nav.about', section: 'about' },
-  { name: 'Contact', href: '/#contact', i18nKey: 'nav.contact', section: 'contact' },
+  { name: 'Services', href: '/services', i18nKey: 'nav.services' },
+  { name: 'Portfolio', href: '/portfolio', i18nKey: 'nav.portfolio' },
+  { name: 'À propos', href: '/about', i18nKey: 'nav.about' },
+  { name: 'Contact', href: '/contact', i18nKey: 'nav.contact' },
 ]
 
 const handleNavClick = async (item: NavItem) => {

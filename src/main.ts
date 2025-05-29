@@ -7,6 +7,7 @@ import router from './router'
 import i18n from './plugins/i18n'
 import '@flaticon/flaticon-uicons/css/all/all.css'
 import 'devicon/devicon.min.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 import './assets/main.css'
 

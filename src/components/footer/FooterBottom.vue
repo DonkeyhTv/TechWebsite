@@ -15,7 +15,7 @@
 
       <div class="flex items-center gap-6">
         <router-link
-          to="/terms"
+          to="/conditions-utilisation"
           class="text-white hover:text-oozami-lightblue text-xs md:text-sm transition-colors"
         >
           {{ $t('footer.terms') }}

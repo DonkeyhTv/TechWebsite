@@ -84,6 +84,21 @@ const routes: RouteRecordRaw[] = [
         'Découvrez les détails de ce projet : technologies utilisées, défis relevés et solutions apportées.',
     },
   },
+  {
+    path: '/conditions-utilisation',
+    name: 'Terms',
+    component: () => import('@/views/Terms.vue'),
+    meta: {
+      title: "Conditions d'Utilisation - OOZAMI",
+      description:
+        "Consultez nos conditions d'utilisation et termes de service pour comprendre vos droits et obligations lors de l'utilisation de nos services OOZAMI.",
+    },
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: () => import('@/views/PrivacyPage.vue'),
+  },
 ]
 
 const router = createRouter({
