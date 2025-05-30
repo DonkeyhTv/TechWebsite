@@ -260,6 +260,7 @@
   },
   "breadcrumb": {
     "home": "Accueil",
+    "services": "Services",
     "about": "À Propos",
     "contact": "Contact",
     "technologies": "Technologies",
@@ -547,6 +548,170 @@
       "description": "Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs digitaux.",
       "primary": "Démarrer un projet",
       "secondary": "Voir notre portfolio"
+    }
+  },
+  "servicesPage": {
+    "pageTitle": "Nos Services",
+    "pageDescription": "Découvrez notre gamme complète de services digitaux : développement web, mobile, design UX/UI, marketing digital et solutions cloud sur mesure.",
+    "badge": "Services Digitaux",
+    "learnMore": "En savoir plus",
+    "hero": {
+      "title": "Solutions Digitales Complètes",
+      "description": "De la conception à la réalisation, nous offrons une gamme complète de services digitaux pour transformer vos idées en succès concrets."
+    },
+    "services": {
+      "webDevelopment": {
+        "title": "Développement Web",
+        "description": "Sites web modernes, performants et responsive utilisant les dernières technologies. De la vitrine au e-commerce complexe."
+      },
+      "mobileDevelopment": {
+        "title": "Développement Mobile",
+        "description": "Applications mobiles natives et cross-platform pour iOS et Android. Interface intuitive et performance optimale."
+      },
+      "uiuxDesign": {
+        "title": "Design UI/UX",
+        "description": "Design centré utilisateur, interfaces intuitives et expériences mémorables. Recherche utilisateur et prototypage."
+      },
+      "cloudSolutions": {
+        "title": "Solutions Cloud",
+        "description": "Infrastructure cloud sécurisée, scalable et performante. Migration, optimisation et maintenance incluses."
+      },
+      "digitalMarketing": {
+        "title": "Marketing Digital",
+        "description": "Stratégies marketing complètes : SEO, SEM, réseaux sociaux, email marketing et analytics pour booster votre visibilité."
+      },
+      "seoOptimization": {
+        "title": "Optimisation SEO",
+        "description": "Amélioration du référencement naturel, audit technique, optimisation de contenu et stratégie de mots-clés."
+      }
+    },
+    "technologies": {
+      "badge": "Technologies",
+      "title": "Technologies de Pointe",
+      "description": "Nous utilisons les technologies les plus récentes et éprouvées pour garantir des solutions robustes, scalables et maintenables.",
+      "cta": "Voir toutes les technologies",
+      "frontend": {
+        "title": "Frontend",
+        "subtitle": "React, Vue, Angular"
+      },
+      "backend": {
+        "title": "Backend",
+        "subtitle": "Node.js, Python, PHP"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "subtitle": "React Native, Flutter"
+      },
+      "cloud": {
+        "title": "Cloud",
+        "subtitle": "AWS, Azure, GCP"
+      }
+    },
+    "process": {
+      "badge": "Notre Processus",
+      "title": "Comment Nous Travaillons",
+      "description": "Un processus éprouvé en 4 étapes pour garantir le succès de votre projet digital.",
+      "steps": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "Analyse de vos besoins, définition des objectifs et élaboration de la stratégie optimale."
+        },
+        "planning": {
+          "title": "Planification",
+          "description": "Conception détaillée, architecture technique et planning de développement précis."
+        },
+        "development": {
+          "title": "Développement",
+          "description": "Réalisation technique avec tests continus et validation à chaque étape."
+        },
+        "delivery": {
+          "title": "Livraison",
+          "description": "Mise en ligne, formation, documentation et support post-lancement."
+        }
+      }
+    },
+    "features": {
+      "badge": "Nos Atouts",
+      "title": "Pourquoi Choisir OOZAMI",
+      "description": "Des fonctionnalités et services qui font la différence pour votre projet digital.",
+      "responsive": {
+        "title": "Design Responsive",
+        "description": "Sites parfaitement adaptés à tous les appareils : mobile, tablette et desktop."
+      },
+      "performance": {
+        "title": "Performance Optimisée",
+        "description": "Temps de chargement rapides et optimisation continue pour une expérience fluide."
+      },
+      "security": {
+        "title": "Sécurité Renforcée",
+        "description": "Protection avancée contre les menaces, chiffrement et sauvegardes automatiques."
+      },
+      "scalable": {
+        "title": "Évolutivité",
+        "description": "Architecture conçue pour grandir avec votre entreprise et s'adapter à vos besoins futurs."
+      },
+      "support": {
+        "title": "Support Dédié",
+        "description": "Assistance technique réactive et accompagnement personnalisé tout au long du projet."
+      },
+      "analytics": {
+        "title": "Analytics Avancés",
+        "description": "Suivi détaillé des performances, insights utilisateurs et rapports personnalisés."
+      }
+    },
+    "packages": {
+      "badge": "Nos Offres",
+      "title": "Packages Sur Mesure",
+      "description": "Choisissez l'offre qui correspond le mieux à vos besoins et à votre budget.",
+      "popular": "Populaire",
+      "getStarted": "Commencer",
+      "starter": {
+        "title": "Starter",
+        "price": "À partir de 2500€",
+        "period": "Projet complet",
+        "description": "Parfait pour les petites entreprises et les projets simples nécessitant une présence digitale efficace.",
+        "features": {
+          "feature1": "Site web responsive",
+          "feature2": "Design sur mesure",
+          "feature3": "Optimisation SEO de base",
+          "feature4": "Support 3 mois"
+        }
+      },
+      "professional": {
+        "title": "Professional",
+        "price": "À partir de 5000€",
+        "period": "Projet complet",
+        "description": "Solution complète pour les entreprises en croissance avec des besoins avancés et intégrations spécifiques.",
+        "features": {
+          "feature1": "Application web avancée",
+          "feature2": "Intégrations tierces",
+          "feature3": "Dashboard analytiques",
+          "feature4": "SEO avancé",
+          "feature5": "Support 6 mois",
+          "feature6": "Formation équipe"
+        }
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "Sur devis",
+        "period": "Projet sur mesure",
+        "description": "Solutions enterprise avec architecture complexe, haute disponibilité et fonctionnalités avancées.",
+        "features": {
+          "feature1": "Architecture sur mesure",
+          "feature2": "Haute disponibilité",
+          "feature3": "Sécurité avancée",
+          "feature4": "Intégrations complexes",
+          "feature5": "Support prioritaire",
+          "feature6": "Accompagnement dédié",
+          "feature7": "SLA garanti"
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "description": "Discutons de vos besoins et trouvons ensemble la solution digitale parfaite pour votre entreprise.",
+      "primary": "Demander un devis",
+      "secondary": "Voir nos réalisations"
     }
   }
 }
