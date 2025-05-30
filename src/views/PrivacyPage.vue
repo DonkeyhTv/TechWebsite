@@ -170,7 +170,7 @@
                 </router-link>
                 <a
                   href="mailto:privacy@email.com"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-oozami-lightblue hover:text-white dark:text-oozami-lightblue font-semibold rounded-lg border border-oozami-lightblue dark:border-oozami-lightblue hover:bg-oozami-lightblue dark:hover:bg-oozami-lightblue transition-colors duration-200"
+                  class="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-oozami-lightblue hover:text-white dark:text-oozami-lightblue dark:hover:text-white font-semibold rounded-lg border border-oozami-lightblue dark:border-oozami-lightblue hover:bg-oozami-lightblue dark:hover:bg-oozami-lightblue transition-colors duration-200"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

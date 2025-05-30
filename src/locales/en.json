@@ -256,6 +256,7 @@
   },
   "breadcrumb": {
     "home": "Home",
+    "about": "About",
     "contact": "Contact",
     "technologies": "Technologies",
     "portfolio": "Portfolio",
@@ -460,6 +461,88 @@
       "title": "Privacy Questions?",
       "description": "If you have questions about our privacy policy or your personal data, our team is here to help.",
       "button": "Contact Us"
+    }
+  },
+  "aboutPage": {
+    "pageTitle": "About TechWebsite",
+    "pageDescription": "Discover TechWebsite's story, mission, and values. A passionate team dedicated to your digital success.",
+    "badge": "Our Story",
+    "hero": {
+      "title": "Creators of Exceptional Digital Experiences",
+      "description": "At TechWebsite, we transform your ideas into innovative digital solutions. Based in Tournai, we combine creativity, technology, and expertise to grow your business in the digital world.",
+      "cta": "Discover our services"
+    },
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "projectsCompleted": "Projects Completed"
+    },
+    "skills": {
+      "development": "Development",
+      "design": "Design",
+      "marketing": "Marketing",
+      "cloud": "Cloud"
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Why We Do What We Do",
+      "description": "Our mission is to support businesses in their digital transformation by creating custom solutions that generate value and growth."
+    },
+    "values": {
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "We stay at the forefront of the latest technologies and trends to deliver modern and high-performance solutions."
+      },
+      "quality": {
+        "title": "Excellence & Quality",
+        "description": "Every project is carried out with the utmost care, respecting the highest quality standards."
+      },
+      "support": {
+        "title": "Personalized Support",
+        "description": "We provide dedicated and personalized support to each client, before, during, and after project completion."
+      }
+    },
+    "process": {
+      "badge": "Our Process",
+      "title": "How We Work Together",
+      "description": "A proven 5-step method to guarantee the success of your digital project.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery & Analysis",
+          "description": "We analyze your needs, objectives, and constraints to perfectly understand your project and define the optimal strategy."
+        },
+        "strategy": {
+          "title": "Strategy & Planning",
+          "description": "We develop a detailed strategy with precise planning, clear deliverables, and validation milestones."
+        },
+        "design": {
+          "title": "Design & Conception",
+          "description": "Creation of mockups, prototypes, and designs while respecting your brand identity and UX/UI best practices."
+        },
+        "development": {
+          "title": "Development & Integration",
+          "description": "Technical development with the best technologies, rigorous testing, and integration of all functionalities."
+        },
+        "launch": {
+          "title": "Launch & Follow-up",
+          "description": "Go-live, training, complete documentation, and post-launch follow-up to ensure your project's success."
+        }
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "The Team Behind TechWebsite",
+      "description": "A passionate and experienced team, dedicated to your digital success."
+    },
+    "founder": {
+      "name": "Steve Amissi",
+      "title": "Founder & Full-Stack Developer",
+      "description": "Passionate about web development and design for over 5 years, I specialize in creating innovative digital solutions that combine technical performance with exceptional user experience."
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Contact us today to discuss your project and discover how we can help you achieve your digital goals.",
+      "primary": "Start a project",
+      "secondary": "View our portfolio"
     }
   }
 }

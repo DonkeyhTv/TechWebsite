@@ -99,6 +99,11 @@ const routes: RouteRecordRaw[] = [
     name: 'Privacy',
     component: () => import('@/views/PrivacyPage.vue'),
   },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('@/views/AboutPage.vue'),
+  },
 ]
 
 const router = createRouter({

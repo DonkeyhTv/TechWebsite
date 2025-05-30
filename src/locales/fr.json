@@ -260,10 +260,12 @@
   },
   "breadcrumb": {
     "home": "Accueil",
+    "about": "À Propos",
     "contact": "Contact",
     "technologies": "Technologies",
     "portfolio": "Portfolio",
-    "terms": "Conditions d'Utilisation"
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité"
   },
   "technologies": {
     "badge": "Notre Stack",
@@ -463,6 +465,88 @@
       "title": "Questions sur la Confidentialité ?",
       "description": "Si vous avez des questions concernant notre politique de confidentialité ou vos données personnelles, notre équipe est là pour vous aider.",
       "button": "Nous Contacter"
+    }
+  },
+  "aboutPage": {
+    "pageTitle": "À Propos de TechWebsite",
+    "pageDescription": "Découvrez l'histoire, la mission et les valeurs de TechWebsite. Une équipe passionnée dédiée à votre succès digital.",
+    "badge": "Notre Histoire",
+    "hero": {
+      "title": "Créateurs d'Expériences Digitales Exceptionnelles",
+      "description": "Chez TechWebsite, nous transformons vos idées en solutions digitales innovantes. Basés à Tournai, nous allions créativité, technologie et expertise pour faire grandir votre entreprise dans le monde numérique.",
+      "cta": "Découvrir nos services"
+    },
+    "stats": {
+      "yearsExperience": "Années d'Expérience",
+      "projectsCompleted": "Projets Réalisés"
+    },
+    "skills": {
+      "development": "Développement",
+      "design": "Design",
+      "marketing": "Marketing",
+      "cloud": "Cloud"
+    },
+    "mission": {
+      "badge": "Notre Mission",
+      "title": "Pourquoi Nous Faisons Ce Que Nous Faisons",
+      "description": "Notre mission est d'accompagner les entreprises dans leur transformation digitale en créant des solutions sur mesure qui génèrent de la valeur et de la croissance."
+    },
+    "values": {
+      "innovation": {
+        "title": "Innovation Continue",
+        "description": "Nous restons à la pointe des dernières technologies et tendances pour offrir des solutions modernes et performantes."
+      },
+      "quality": {
+        "title": "Excellence & Qualité",
+        "description": "Chaque projet est réalisé avec le plus grand soin, en respectant les standards les plus élevés de qualité."
+      },
+      "support": {
+        "title": "Accompagnement Personnalisé",
+        "description": "Nous offrons un support dédié et personnalisé à chaque client, avant, pendant et après la réalisation du projet."
+      }
+    },
+    "process": {
+      "badge": "Notre Processus",
+      "title": "Comment Nous Travaillons Ensemble",
+      "description": "Une méthode éprouvée en 5 étapes pour garantir le succès de votre projet digital.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte & Analyse",
+          "description": "Nous analysons vos besoins, objectifs et contraintes pour comprendre parfaitement votre projet et définir la stratégie optimale."
+        },
+        "strategy": {
+          "title": "Stratégie & Planification",
+          "description": "Nous élaborons une stratégie détaillée avec un planning précis, des livrables clairs et des jalons de validation."
+        },
+        "design": {
+          "title": "Conception & Design",
+          "description": "Création des maquettes, prototypes et designs en respectant votre identité de marque et les meilleures pratiques UX/UI."
+        },
+        "development": {
+          "title": "Développement & Intégration",
+          "description": "Développement technique avec les meilleures technologies, tests rigoureux et intégration de toutes les fonctionnalités."
+        },
+        "launch": {
+          "title": "Lancement & Suivi",
+          "description": "Mise en ligne, formation, documentation complète et suivi post-lancement pour assurer le succès de votre projet."
+        }
+      }
+    },
+    "team": {
+      "badge": "Notre Équipe",
+      "title": "L'Équipe Derrière TechWebsite",
+      "description": "Une équipe passionnée et expérimentée, dédiée à votre réussite digitale."
+    },
+    "founder": {
+      "name": "Steve Amissi",
+      "title": "Fondateur & Développeur Full-Stack",
+      "description": "Passionné par le développement web et le design depuis plus de 5 ans, je me spécialise dans la création de solutions digitales innovantes qui allient performance technique et expérience utilisateur exceptionnelle."
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "description": "Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs digitaux.",
+      "primary": "Démarrer un projet",
+      "secondary": "Voir notre portfolio"
     }
   }
 }
