@@ -1,11 +1,11 @@
-# OOZAMI - Solutions Digitales
+# TechWebsite - Solutions Digitales
 
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)](https://vitejs.dev/)
 
-Site web moderne pour OOZAMI, une agence digitale offrant des solutions sur mesure en design, développement et marketing digital.
+Site web moderne pour une agence digitale offrant des solutions sur mesure en design, développement et marketing digital.
 
 ## 🚀 Fonctionnalités
 
@@ -160,15 +160,17 @@ Les fichiers de traduction sont dans `/src/locales/` avec support complet FR/EN 
 
 Meta tags configurables dans `/src/composables/useSEO.ts` avec données structurées Schema.org.
 
-## 📱 Fonctionnalités Principales
+## 📱 Pages & Fonctionnalités
 
-### 1. Hero Section Interactive
+### Page d'Accueil
+
+#### 1. Hero Section Interactive
 
 - Image avec effet parallaxe 3D au survol
 - Particules animées en arrière-plan
 - Responsive avec versions mobile/desktop
 
-### 2. Section Services
+#### 2. Section Services
 
 - **Grille responsive** de 6 cartes de services
 - **Effet hover unique** : fond bleu qui glisse de gauche à droite
@@ -176,21 +178,21 @@ Meta tags configurables dans `/src/composables/useSEO.ts` avec données structur
 - **Icônes Flaticon** personnalisables
 - **Support i18n** complet
 
-### 3. Section About Us
+#### 3. Section About Us
 
 - **Grille 2 colonnes** avec image parallaxe 3D
 - **4 items avec icônes** dans une grille responsive
 - **Animations au scroll** optimisées
 - **Effets hover** avec élévation et transitions fluides
 
-### 4. Section Why Choose Us
+#### 4. Section Why Choose Us
 
 - **Design contrasté** avec fond sombre
 - **Effet parallaxe 3D** sur l'image
 - **3 points numérotés** avec design moderne
 - **Animations au scroll** depuis les côtés
 
-### 5. Section Portfolio
+#### 5. Section Portfolio
 
 - **Grille dynamique avec Isotope.js**
 - **Système de filtrage** par catégorie
@@ -198,40 +200,213 @@ Meta tags configurables dans `/src/composables/useSEO.ts` avec données structur
 - **Effets hover** avec overlay et badges
 - **Performance optimisée** avec lazy loading
 
-### 6. Section Clients
+#### 6. Section Clients
 
 - **Carousel infini** de logos clients
 - **Effet de vague** avec délais progressifs
 - **Logos interactifs** avec grayscale/couleur
 - **Rotation automatique** toutes les 3.5 secondes
 
-### 7. Section Testimonials
+#### 7. Section Testimonials
 
 - **Fond parallaxe** avec overlay
 - **En-tête avec notation Google** authentique
 - **Carousel automatique** de témoignages
 - **Design glassmorphism** moderne
 
-### 8. Section Contact
+#### 8. Section Contact
 
 - **Formulaire centré** avec 5 champs
 - **Interactions dynamiques** avec focus tracking
 - **Animations en cascade** au scroll
 - **États de chargement** et validation
 
-### 9. Footer Modulaire
+#### 9. Footer Modulaire
 
 - **5 composants séparés** pour maintenance facile
 - **Design avec fond image** et overlay
 - **Newsletter intégré** avec validation
 - **Animations d'apparition** en cascade
 
-### 10. Dashboard Analytics
+### Page À Propos (/about)
+
+#### 1. Hero Section Biographique
+
+- **Layout responsive 2 colonnes** : texte + grille de compétences
+- **Statistiques animées** : années d'expérience et projets réalisés
+- **Grille de compétences** : 4 cartes avec icônes (Développement, Design, Marketing, Cloud)
+- **Bouton CTA** : redirection vers contact
+- **Ordre inversé mobile** : compétences d'abord, puis texte
+
+#### 2. Section Mission & Valeurs
+
+- **Badge avec icône cœur** pour identifier la section
+- **Grille responsive** : 1 col mobile → 2 cols tablet → 3 cols desktop
+- **3 valeurs principales** :
+  - Innovation Continue (icône ampoule)
+  - Excellence & Qualité (icône médaille)
+  - Accompagnement Personnalisé (icône casque)
+- **Cartes avec hover effects** : élévation et transitions fluides
+- **Backgrounds adaptatifs** : blanc en mode clair, coloré en mode sombre
+
+#### 3. Section Processus de Travail
+
+- **5 étapes numérotées** du processus client
+- **Layout alterné** : zigzag sur desktop, vertical sur mobile
+- **Cercles numérotés** : design moderne avec ombre
+- **Étapes détaillées** :
+  1. Découverte & Analyse (icône recherche)
+  2. Stratégie & Planification (icône échecs)
+  3. Conception & Design (icône règle)
+  4. Développement & Intégration (icône code)
+  5. Lancement & Suivi (icône fusée)
+- **Animations au scroll** : apparition progressive
+
+#### 4. Section Équipe
+
+- **Cartes de profil** avec layout flexible
+- **2 membres d'équipe** affichés
+- **Informations complètes** :
+  - Photo de profil (avatar par défaut)
+  - Nom et titre
+  - Description détaillée
+  - Liens sociaux (LinkedIn, GitHub, Twitter)
+- **Design responsive** : vertical sur mobile, horizontal sur desktop
+- **Effets hover** sur les boutons sociaux avec scale
+
+#### 5. Section CTA Final
+
+- **Fond coloré** avec gradient OOZAMI
+- **Double bouton** :
+  - Primaire : "Démarrer un projet" → contact
+  - Secondaire : "Voir notre portfolio" → portfolio
+- **Texte centré** avec call-to-action engageant
+- **Responsive design** : stack sur mobile, côte à côte sur desktop
+
+### Page Services (/services)
+
+#### 1. Hero Section Services
+
+- **Introduction générale** des services TechWebsite
+- **Grille de 6 services principaux** :
+  - Développement Web (icône code)
+  - Développement Mobile (icône mobile)
+  - Design UI/UX (icône palette)
+  - Solutions Cloud (icône cloud)
+  - Marketing Digital (icône graphique)
+  - Optimisation SEO (icône recherche)
+- **Cartes interactives** avec hover effects et liens "En savoir plus"
+- **Layout responsive** : 1→2→3 colonnes selon l'écran
+
+#### 2. Section Technologies
+
+- **Layout 2 colonnes** : grille technos + texte descriptif
+- **Grille de 4 technologies** :
+  - Frontend (HTML5 - React, Vue, Angular)
+  - Backend (Serveur - Node.js, Python, PHP)
+  - Mobile (React - React Native, Flutter)
+  - Cloud (AWS - AWS, Azure, GCP)
+- **Bouton CTA** : "Voir toutes les technologies" → /technologies
+- **Cartes technos** avec background blanc et hover effects
+
+#### 3. Section Processus Client
+
+- **4 étapes horizontales** avec numérotation
+- **Design en ligne** avec connecteurs visuels
+- **Étapes détaillées** :
+  1. Consultation (icône commentaires)
+  2. Planification (icône diagramme)
+  3. Développement (icône code)
+  4. Livraison (icône fusée)
+- **Layout responsive** : stack vertical sur mobile
+
+#### 4. Section Atouts & Fonctionnalités
+
+- **6 points forts** en grille responsive
+- **Fonctionnalités mises en avant** :
+  - Design Responsive (icône mobile)
+  - Performance Optimisée (icône tachymètre)
+  - Sécurité Renforcée (icône bouclier)
+  - Évolutivité (icône expansion)
+  - Support Dédié (icône casque)
+  - Analytics Avancés (icône graphique)
+- **Cartes avec border** et effets hover
+
+#### 5. Section Packages Tarifaires
+
+- **3 offres structurées** :
+  - **Starter** (2500€) : Sites simples, PME
+  - **Professional** (5000€) : Solutions avancées, badge "Populaire"
+  - **Enterprise** (Sur devis) : Architecture complexe
+- **Listes de fonctionnalités** avec icônes check
+- **Design différencié** pour l'offre populaire
+- **Boutons CTA** : "Commencer" vers contact
+- **Responsive** : stack mobile, grille desktop
+
+#### 6. Section CTA Services
+
+- **Fond OOZAMI** avec gradient
+- **Double appel à l'action** :
+  - "Demander un devis" → contact
+  - "Voir nos réalisations" → portfolio
+- **Message engageant** pour conversion
+
+### Pages Légales
+
+#### Page Conditions d'Utilisation (/conditions-utilisation)
+
+- **Structure complète** avec 12 sections numérotées
+- **Table des matières** interactive avec ancres
+- **Sections détaillées** : acceptation, services, comptes, paiements, propriété intellectuelle, etc.
+- **Sous-sections** pour les paiements (tarification, facturation, remboursements)
+- **Design professionnel** avec badges et icônes
+- **Navigation smooth** entre sections
+- **Contact dédié** : legal@email.com
+
+#### Page Politique de Confidentialité (/privacy)
+
+- **10 sections RGPD** conformes
+- **Gestion des données** transparente
+- **Sections cookies** détaillées (essentiels, analytiques, marketing)
+- **Droits utilisateurs** expliqués clairement
+- **Design cohérent** avec la page conditions
+- **Contact spécialisé** : privacy@email.com
+
+### Dashboard Analytics (/dashboard)
+
+#### 10. Dashboard Analytics
 
 - Visualisation de données en temps réel
 - Profils de personnalisation Sitecore
 - Métriques et KPIs interactifs
 - Export de rapports
+
+## 🎯 Architecture Responsive
+
+### Breakpoints Utilisés
+
+- **Mobile** : Base (0-640px)
+- **Small** : `sm:` (640px+)
+- **Medium** : `md:` (768px+)
+- **Large** : `lg:` (1024px+)
+- **Extra Large** : `xl:` (1280px+)
+
+### Design Patterns
+
+- **Mobile-first approach** avec Tailwind CSS
+- **Grilles adaptatives** : 1→2→3→4 colonnes selon l'écran
+- **Typography progressive** : text-sm → text-base → text-lg → text-xl
+- **Espacement intelligent** : padding et margins adaptatifs
+- **Navigation optimisée** : hamburger menu sur mobile
+- **Images responsives** avec lazy loading
+
+### Optimisations Mobile
+
+- **Touch-friendly** : zones de clic 44px minimum
+- **Performance** : images optimisées et lazy loading
+- **Interactions** : swipe gestures pour carousels
+- **Lisibilité** : contraste et taille de police optimaux
+- **Navigation** : menu mobile avec overlay
 
 ## 🔧 Scripts Disponibles
 

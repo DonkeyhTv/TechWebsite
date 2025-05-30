@@ -5,7 +5,7 @@
       <div class="absolute inset-0 bg-oozami-darkblue/85"></div>
     </div>
 
-    <div class="container mx-auto px-4 max-w-6xl relative z-10">
+    <div class="container mx-auto px-4 max-w-7xl relative z-10">
       <div ref="headerRef" class="fade-in-down opacity-0 text-center mb-12 md:mb-16">
         <div class="flex items-center justify-center gap-2 mb-4">
           <div class="w-1.5 h-1.5 bg-oozami-lightblue rounded-full"></div>

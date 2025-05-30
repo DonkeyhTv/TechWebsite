@@ -32,9 +32,9 @@
 
 <script setup lang="ts">
 const resources = [
-  { name: 'Support', key: 'support', path: '/support' },
-  { name: 'Dashboard', key: 'dashboard', path: '/dashboard' },
-  { name: 'Drivers', key: 'drivers', path: '/drivers' },
-  { name: 'Projects', key: 'projects', path: '/projects' },
+  { name: 'Support', key: 'support', path: '#' },
+  { name: 'Dashboard', key: 'dashboard', path: '#' },
+  { name: 'Drivers', key: 'drivers', path: '#' },
+  { name: 'Projects', key: 'projects', path: '#' },
 ]
 </script>

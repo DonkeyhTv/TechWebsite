@@ -10,7 +10,7 @@
     <section
       class="terms-content py-16 md:py-20 bg-white dark:bg-oozami-darkblue transition-colors duration-300"
     >
-      <div class="container mx-auto px-4 max-w-4xl">
+      <div class="container mx-auto px-4 max-w-7xl">
         <div ref="contentRef" class="fade-in-up opacity-0">
           <div class="prose prose-lg max-w-none dark:prose-invert mb-5">
             <p class="text-sm lg:text-xl text-gray-600 dark:text-gray-300 mb-8">

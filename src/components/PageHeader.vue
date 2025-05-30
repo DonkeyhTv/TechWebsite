@@ -20,7 +20,7 @@
     <div class="container mx-auto px-4 max-w-7xl relative z-20">
       <div ref="headerContent" class="fade-in-up opacity-0 text-center">
         <h1
-          class="text-4xl md:text-5xl lg:text-6xl font-bold text-oozami-black dark:text-white mb-6 transition-all duration-300"
+          class="text-4xl md:text-5xl lg:text-6xl font-bold text-oozami-black dark:text-white mb-6 mt-5 transition-all duration-300"
         >
           {{ title }}
         </h1>
